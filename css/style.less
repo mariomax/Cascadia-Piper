@@ -1,0 +1,74 @@
+@import 'palette.less';
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Yanone+Kaffeesatz:400,700');
+body {
+  font-size: 16px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  label,
+  input,
+  textarea {
+    color: @white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  p,
+  blockquote,
+  small,
+  em,
+  figcaption {
+    font-family: 'Noto Serif', serif;
+  }
+  main {
+    background: @dark;
+    padding: 1.5rem 1rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    p {
+      color: @light;
+      font-size: 1rem;
+    }
+  }
+  footer {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    background: @dark;
+    color: @white;
+    padding: 2rem;
+    .address {
+      text-align: center;
+    }
+    a {
+      color: @white;
+      &:hover {
+        color: @mid;
+      }
+    }
+    .icon {
+      margin: .75rem auto;
+      img {
+        max-width: 80px;
+      }
+    }
+    .svg-inline--fa {
+      display: inline-block;
+      margin: 0.2rem 0.7rem;
+      font-size: 2rem;
+      &:hover {
+        color: @mid;
+        text-decoration: none;
+      }
+    }
+  }
+}

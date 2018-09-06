@@ -1,0 +1,5 @@
+# Contact form
+contact/**
+
+# PHPMailer and contents
+phpmailer/**
