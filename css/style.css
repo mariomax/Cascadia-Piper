@@ -27,6 +27,7 @@ body blockquote,
 body small,
 body em,
 body figcaption {
+  color: #F3F3F3;
   font-family: 'Noto Serif', serif;
 }
 body .tartan {

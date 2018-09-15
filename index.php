@@ -50,6 +50,7 @@
     <main>
       <h1>Bagpiper For Hire: Portland, OR & Vancouver, WA</h1>
       <p>John Goff – the Cascadia Piper, a second-generation bagpiper has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. John is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. John prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
+      <small>Loud Pipes Save Lives</small>
 
       <!-- Display Facebook embedded feed -->
       <div class="fb-page" data-href="https://www.facebook.com/cascadiapiper/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cascadiapiper/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cascadiapiper/">Cascadia Piper</a></blockquote></div>
