@@ -1,5 +1,7 @@
 @import 'palette.less';
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Yanone+Kaffeesatz:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700');
+
 body {
   font-size: 16px;
   h1,
@@ -9,11 +11,13 @@ body {
   h5,
   h6,
   a,
-  label,
+  label {
+    color: @white;
+    font-family: 'Signika', sans-serif;
+  }
   input,
   textarea {
-    color: @white;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: @dark;
   }
   p,
   blockquote,
@@ -22,11 +26,19 @@ body {
   figcaption {
     font-family: 'Noto Serif', serif;
   }
+  .tartan {
+    background-image: url(../images/caledonia-modern-tartan.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+  }
   main {
     background: @dark;
     padding: 1.5rem 1rem;
     h1 {
       font-size: 1.8rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
     }
     h2 {
       font-size: 1.5rem;
@@ -37,6 +49,7 @@ body {
     p {
       color: @light;
       font-size: 1rem;
+      padding: .5rem 0 1rem;
     }
   }
   footer {
@@ -46,6 +59,7 @@ body {
     background: @dark;
     color: @white;
     padding: 2rem;
+
     .address {
       text-align: center;
     }

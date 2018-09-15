@@ -43,11 +43,17 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=2131529450393664&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <?php include 'includes/header.php'; ?>
     <main>
       <h1>Bagpiper For Hire: Portland, OR & Vancouver, WA</h1>
       <p>John Goff – the Cascadia Piper, a second-generation bagpiper has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. John is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. John prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
+
+      <!-- Display Facebook embedded feed -->
       <div class="fb-page" data-href="https://www.facebook.com/cascadiapiper/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cascadiapiper/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cascadiapiper/">Cascadia Piper</a></blockquote></div>
+      
       <h2>Cascadia Piper’s Services:</h2>
       <h3>Bagpiper Services by Cascadia Piper</h3>
       <p>John Goff, the Cascadia Piper offers a variety of services for the community and individuals throughout the Pacific Northwest. His knowledge of traditional music and dress provide authenticity while his background of award winning performances, second-generation bagpiping experience, and integrity will enhance your special event. Special musical requests can be honored by arrangement.</p>
@@ -60,6 +66,10 @@
 
       <h3>Bagpiper for Special Events<h3>
       <p>Bagpipes are a wonderful way to celebrate! Great for birthday parties, corporate parties, surprise parties, anniversary events, bachelor/bachelorette parties, cultural events, St. Patrick’s Day, parades, and countless other occasions. Contact John to customize your special event.</p>
+
+      <h3>Bagpipe Music by Cascadia Piper:</h3>
+      <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
+      <?php include 'contact/contact.php'; ?>
     </main>
     <?php include 'includes/footer.php'; ?>
 	</body>

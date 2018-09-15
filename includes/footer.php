@@ -7,10 +7,6 @@
 				<br> Portland, OR 97293</p>
 		</div>
 
-		<div class="icon">
-			<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
-		</div>
-
 		<div class="social">
 			<!-- Encrypted email icon -->
 			<script type="text/javascript">
@@ -41,5 +37,9 @@
 			<a href="https://www.facebook.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="facebook page"><i class="fab fa-facebook-square"></i></a>
 				
 			<p><span class="copyright">&copy;</span> <?php echo date("Y"); ?> Cascadia Piper</p>
+		</div>
+
+		<div class="icon">
+			<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
 		</div>
 </footer>
