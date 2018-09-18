@@ -32,28 +32,45 @@
     <!-- Font Awesome CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
+    <!-- SEO / schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "description": "Professional Bagpipe Player",
+      "image": [
+        "https://www.cascadiapiper.com/images/cascadia_1x1.png",
+        "https://www.cascadiapiper.com/images/cascadia_4x3.png",
+        "https://www.cascadiapiper.com/images/cascadia_16x9.png"
+      ],
+      "@id": "https://www.cascadiapiper.com/",
+      "name": "Cascadia Piper",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2116 SE Ash Street",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97216",
+        "addressCountry": "US"
+      },
+      "url": "https://www.cascadiapiper.com",
+      "telephone": "+15039605599",
+      "brand": {
+        "alternateName": "Cascadia Piper",
+        "image": "https://www.cascadiapiper.com/images/cascadia_1x1.png",
+        "description": "Bagpipe Player",
+        "disambiguatingDescription": "Professional bagpiper for hire"
+      }
+    }
+    </script>
 	</head>
 	<body>
 
-    <!-- Facebook feed script -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=2131529450393664&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
     <?php include 'includes/header.php'; ?>
-    <main>
+    <?php include 'includes/nav.php'; ?>
+    <main class="wrapper">
       <h1>Bagpiper For Hire: Portland, OR & Vancouver, WA</h1>
       <p>John Goff – the Cascadia Piper, a second-generation bagpiper has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. John is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. John prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
-      <small>Loud Pipes Save Lives</small>
-
-      <!-- Display Facebook embedded feed -->
-      <div class="fb-page" data-href="https://www.facebook.com/cascadiapiper/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cascadiapiper/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cascadiapiper/">Cascadia Piper</a></blockquote></div>
       
       <h2>Cascadia Piper’s Services:</h2>
       <h3>Bagpiper Services by Cascadia Piper</h3>
@@ -70,8 +87,10 @@
 
       <h3>Bagpipe Music by Cascadia Piper:</h3>
       <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
-      <?php include 'contact/contact.php'; ?>
     </main>
     <?php include 'includes/footer.php'; ?>
+    
+    <!-- JavaScript file from js folder -->
+    <script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>

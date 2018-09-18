@@ -27,11 +27,56 @@ body {
     color: @light;
     font-family: 'Noto Serif', serif;
   }
-  .tartan {
+  nav {
+    position: sticky;
+    background-color: @dark;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+    a {
+      color: @white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      &:hover {
+        color: @mid;
+      }
+    }
+    #navbar {
+      overflow: hidden;
+    }
+  }
+  .sticky {
+    position: fixed;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  .sticky + .wrapper {
+    // width: 100%;
+    padding: 60px 1rem;
+  }
+  header.tartan {
     background-image: url(../images/caledonia-modern-tartan.jpg);
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100px;
+    height: auto;
+    .logo {
+      height: 10rem;
+      width: 10rem;
+      padding: 1rem;
+    }
+    p {
+      font-family: 'Signika', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
   }
   main {
     background: @dark;
@@ -51,6 +96,16 @@ body {
       color: @light;
       font-size: 1rem;
       padding: .5rem 0 1rem;
+    }
+    .photos {
+      display: grid;
+      grid-template-rows: auto;
+      justify-items: center;
+      grid-gap: 1rem;
+      padding: 1rem;
+      img {
+        max-width: 80%;
+      }
     }
   }
   footer {
@@ -85,5 +140,17 @@ body {
         text-decoration: none;
       }
     }
+  }
+}
+
+@media (min-width: 700px) {
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .photos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
