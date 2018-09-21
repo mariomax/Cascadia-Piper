@@ -8,31 +8,26 @@
     <meta name="description" content="Cascadia Piper bagpipe services include: parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends. (503) 960-5599" />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
 
-		<title>Cascadia Piper</title>
+		<title>Cascadia Piper: Music</title>
 
     <!-- Stylesheets in the css folder -->
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
 
+    <!-- jQuery script -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
     <!-- Font Awesome CDN -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 		
 	<body>
-
-		<!-- Facebook feed script -->
-		<div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=2131529450393664&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-		</script>	
-    
+    <?php include '../includes/nav.inc.php'; ?>
     <?php include '../includes/header.php'; ?>
-		<?php include '../includes/nav.inc.php'; ?>
+    
 		<main>
+      <h3>Bagpipe Music by Cascadia Piper:</h3>
+      <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
+
       <section class="audio">
         <h3>Amazing Grace</h3>
         <audio controls>

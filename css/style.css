@@ -14,8 +14,9 @@ body h4,
 body h5,
 body h6,
 body a,
-body label {
-  color: #FFF;
+body label,
+body small {
+  color: #000;
   font-family: 'Signika', sans-serif;
 }
 body input,
@@ -24,44 +25,14 @@ body textarea {
 }
 body p,
 body blockquote,
-body small,
 body em,
 body figcaption {
-  color: #F3F3F3;
+  color: #090909;
   font-family: 'Noto Serif', serif;
 }
-body nav {
-  position: sticky;
-  background-color: #090909;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1rem 0;
-}
-body nav a {
-  color: #FFF;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-body nav a:hover {
-  color: #8893A0;
-}
-body nav #navbar {
-  overflow: hidden;
-}
-body .sticky {
-  position: fixed;
-  justify-content: space-around;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-body .sticky + .wrapper {
-  padding: 60px 1rem;
-}
 body header.tartan {
-  background-image: url(../images/caledonia-modern-tartan.jpg);
-  background-size: contain;
+  background-image: url(../images/cascadia-landscape.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +52,7 @@ body header.tartan p {
   padding-bottom: 1rem;
 }
 body main {
-  background: #090909;
+  background-color: #F3F3F3;
   padding: 1.5rem 1rem;
 }
 body main h1 {
@@ -96,9 +67,16 @@ body main h3 {
   font-size: 1.3rem;
 }
 body main p {
-  color: #F3F3F3;
+  color: #090909;
   font-size: 1rem;
+  line-height: 1.5;
   padding: .5rem 0 1rem;
+}
+body main .main-photo {
+  border: 3px solid #8893A0;
+  border-radius: 1rem;
+  max-width: 100%;
+  margin: 1rem auto;
 }
 body main .photos {
   display: grid;
@@ -117,21 +95,39 @@ body footer {
   background: #090909;
   color: #FFF;
   padding: 2rem;
-}
-body footer .address {
   text-align: center;
 }
-body footer a {
+body footer p {
+  color: #FFF;
+  line-height: 1.5;
+}
+body footer small {
+  color: #F3F3F3;
+  line-height: 2;
+}
+body footer .address {
+  padding-bottom: .75rem;
+}
+body footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: .75rem;
+}
+body footer .social a {
   color: #FFF;
 }
-body footer a:hover {
+body footer .social a:hover {
   color: #8893A0;
 }
-body footer .icon {
-  margin: .75rem auto;
+body footer .copy {
+  padding-bottom: .75rem;
 }
-body footer .icon img {
-  max-width: 80px;
+body footer .atd-icon {
+  margin: 0 auto;
+}
+body footer .atd-icon img {
+  max-width: 70px;
 }
 body footer .svg-inline--fa {
   display: inline-block;
@@ -141,6 +137,116 @@ body footer .svg-inline--fa {
 body footer .svg-inline--fa:hover {
   color: #8893A0;
   text-decoration: none;
+}
+.hamburger-menu-wrapper {
+  background: #090909;
+  padding: 10px;
+  display: inline-block;
+}
+.hamburger-menu {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  text-indent: -9999px;
+  z-index: 9999;
+  cursor: pointer;
+  background: transparent;
+}
+.hamburger-menu:focus {
+  outline: none;
+}
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background: #02D5FD;
+}
+.hamburger-menu span:before,
+.hamburger-menu span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #02D5FD;
+  content: "";
+}
+.hamburger-menu span:before {
+  top: -7px;
+}
+.hamburger-menu span:after {
+  bottom: -7px;
+}
+.hamburger-menu span:before,
+.hamburger-menu span:after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+.hamburger-menu span:before {
+  transition-property: top, transform;
+}
+.hamburger-menu span::after {
+  transition-property: bottom, transform;
+}
+.hamburger-menu.active span {
+  background: none;
+}
+.hamburger-menu.active span:before {
+  top: 0;
+  transform: rotate(225deg);
+}
+.hamburger-menu.active span:after {
+  bottom: 0;
+  transform: rotate(135deg);
+}
+.hamburger-menu.active span:before,
+.hamburger-menu.active span:after {
+  transition-delay: 0s, 0.3s;
+}
+.menu {
+  background-color: #090909;
+  position: relative;
+  min-width: 220px;
+  text-align: center;
+}
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+}
+.menu-list a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 0;
+  transition: all 0.5s ease;
+}
+.menu-list a:hover {
+  color: #02D5FD;
+}
+.menu-overlay {
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1111;
 }
 @media (min-width: 700px) {
   .photos {

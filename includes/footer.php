@@ -4,8 +4,8 @@
 
 	<div class="address">
 		<p class="tel">(503) 960-5599</p>
-		<p>P.O. Box 15143
-			<br> Portland, OR 97293</p>
+		<p>P.O. Box 15143<br>
+		Portland, OR 97293</p>
 	</div>
 
 	<div class="social">
@@ -36,13 +36,15 @@
 
 		<!-- Facebook icon -->
 		<a href="https://www.facebook.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="facebook page"><i class="fab fa-facebook-square"></i></a>
-			
-		<p><span class="copyright">&copy;</span> <?php echo date("Y"); ?> Cascadia Piper</p>
 	</div>
 
-	<div class="icon">
+	<div class="copy">	
+		<p><span class="copyright">&copy;</span> <?php echo date("Y"); ?> Cascadia Piper</p>
+		<small>"Loud Pipes Save Lives"</small>
+	</div>	
+
+	<div class="atd-icon">
 		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
 	</div>
 
-  <p>"Loud Pipes Save Lives"</p>
 </footer>

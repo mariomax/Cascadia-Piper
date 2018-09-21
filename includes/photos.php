@@ -14,24 +14,16 @@
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
 
+    <!-- jQuery script -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
     <!-- Font Awesome CDN -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 		
 	<body>
-
-		<!-- Facebook feed script -->
-		<div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=2131529450393664&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-		</script>	
     
-    <?php include '../includes/header.php'; ?>
     <?php include '../includes/nav.inc.php'; ?>
+    <?php include '../includes/header.php'; ?>
     
     <main>
       <section class="photos">
@@ -43,10 +35,12 @@
         <img src="../images/bagpipe-in-backyard.jpg" alt="John Goff: the Cascadia Piper in Hood River">
       </section>
     </main>
-    
+
     <?php include '../includes/footer.php'; ?>
     
     <!-- JavaScript file from js folder -->
     <script src="../js/main.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script>
+
   </body>
 </html> 

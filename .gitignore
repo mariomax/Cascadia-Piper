@@ -3,3 +3,6 @@ contact/**
 
 # PHPMailer and contents
 phpmailer/**
+
+# Stashed files:js and style for float/lock nav bar
+stashed-files/**

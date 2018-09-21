@@ -1,17 +1,20 @@
-// When the user scrolls the page, execute stickyNav 
-window.onscroll = function() {stickyNav()};
+// Free code from jqueryscript.net
+//A dead simple jQuery hamburger menu plugin for both mobile and desktop that reveals a dropdown menu with a fullscreen background overlay as you click/tap on the toggle icon.
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when its scroll position is reached. Remove "sticky" when leaving the scroll position
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+(function() {
+  'use strict';
+  $('.hamburger-menu').click(function (e) {
+      e.preventDefault();
+      if ($(this).hasClass('active')){
+          $(this).removeClass('active');
+          $('.menu-overlay').fadeToggle( 'fast', 'linear' );
+          $('.menu .menu-list').slideToggle( 'slow', 'swing' );
+          // $('.hamburger-menu-wrapper').toggleClass('bounce-effect');
+      } else {
+          $(this).addClass('active');
+          $('.menu-overlay').fadeToggle( 'fast', 'linear' );
+          $('.menu .menu-list').slideToggle( 'slow', 'swing' );
+          // $('.hamburger-menu-wrapper').toggleClass('bounce-effect');
+      }
+  })
+})();
