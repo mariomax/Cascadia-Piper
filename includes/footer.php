@@ -44,7 +44,8 @@
 	</div>	
 
 	<div class="atd-icon">
-		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
+		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-text">Website by Anchor Tag Design</a>
+		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-logo"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
 	</div>
 
 </footer>

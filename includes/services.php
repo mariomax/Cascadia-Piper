@@ -27,19 +27,25 @@
     
     <main>
       <section class="services">
-      <h2>Cascadia Piper’s Services:</h2>
-      <h3>Bagpiper Services by Cascadia Piper</h3>
-      <p>John Goff, the Cascadia Piper offers a variety of services for the community and individuals throughout the Pacific Northwest. His knowledge of traditional music and dress provide authenticity while his background of award winning performances, second-generation bagpiping experience, and integrity will enhance your special event. Special musical requests can be honored by arrangement.</p>
+        <h1>Cascadia Piper’s Services:</h1>
+        <p>John Goff, the Cascadia Piper offers a variety of services for the community and individuals throughout the Pacific Northwest. His knowledge of traditional music and dress provide authenticity while his background of award winning performances, second-generation bagpiping experience, and integrity will enhance your special event. Special musical requests can be honored by arrangement.</p>
 
-      <h3>Bagpiper for Weddings</h3>
-      <p>Bagpipes are a festive addition to your special day. Many people enjoy having piping greet guests as they arrive for the event. John can pipe you in for the procession, play during the ceremony, or as you depart for the reception. John has played scores of weddings – big and small – in all settings: from churches and historic sites to vineyards, boats, beaches, mountainsides and parks, and can offer ideas and song suggestions.</p>
-
-      <h3>Bagpiper for Funerals</h3>
-      <p>John has played bagpipes at hundreds of funerals, memorial services, and celebrations of life. He also has vast experience playing military funerals with honors. John has played in a variety of settings, from graveside services to churches, and places in nature. He will work with you to create the respectful and honorable experience you desire.</p>
-
-      <h3>Bagpiper for Special Events<h3>
-      <p>Bagpipes are a wonderful way to celebrate! Great for birthday parties, corporate parties, surprise parties, anniversary events, bachelor/bachelorette parties, cultural events, St. Patrick’s Day, parades, and countless other occasions. Contact John to customize your special event.</p>
+        <div class="descriptions">
+          <div>
+            <h3>Bagpiper for Weddings</h3>
+            <p>Bagpipes are a festive addition to your special day. Many people enjoy having piping greet guests as they arrive for the event. John can pipe you in for the procession, play during the ceremony, or as you depart for the reception. John has played scores of weddings – big and small – in all settings: from churches and historic sites to vineyards, boats, beaches, mountainsides and parks, and can offer ideas and song suggestions.</p>
+          </div>
+          <div>
+            <h3>Bagpiper for Funerals</h3>
+            <p>John has played bagpipes at hundreds of funerals, memorial services, and celebrations of life. He also has vast experience playing military funerals with honors. John has played in a variety of settings, from graveside services to churches, and places in nature. He will work with you to create the respectful and honorable experience you desire.</p>
+          </div>
+          <div>
+            <h3>Bagpiper for Special Events</h3>
+            <p>Bagpipes are a wonderful way to celebrate! Great for birthday parties, corporate parties, surprise parties, anniversary events, bachelor/bachelorette parties, cultural events, St. Patrick’s Day, parades, and countless other occasions. Contact John to customize the music to fit your special event and has a range of material to work with.</p>
+          </div>
+        </div>
       </section>
+
     </main>
 
     <?php include '../includes/footer.php'; ?>

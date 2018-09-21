@@ -58,6 +58,8 @@
       },
       "url": "https://www.cascadiapiper.com",
       "telephone": "+15039605599",
+      "jobTitle": "Bagpipe player",
+      "worksFor": "Cascadia Piper",
       "brand": {
         "alternateName": "Cascadia Piper",
         "image": "https://www.cascadiapiper.com/images/cascadia_1x1.png",
@@ -74,9 +76,15 @@
     <?php include 'includes/header.php'; ?>
 
     <main class="wrapper">
-      <h1>Bagpiper For Hire: Portland, OR & Vancouver, WA</h1>
-      <p>John Goff – the Cascadia Piper, a second-generation bagpiper has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. John is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. John prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
-      <img src="images/hood-river.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
+      <div class="intro">
+        <h1>Cascadia Piper</h1>
+        <h2>Bagpiper For Hire: Portland, OR & Vancouver, WA</h2>
+        <p>John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. He prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
+      </div>
+      <figure>
+        <img src="images/hood-river.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
+        <figcaption>John Goff in Hood River, Oregon at the Idlewild Cemetary.</figcaption>
+      </figure>
     </main>
     <?php include 'includes/footer.php'; ?>
     

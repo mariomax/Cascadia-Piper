@@ -25,9 +25,9 @@
     <?php include '../includes/header.php'; ?>
     
 		<main>
-      <h3>Bagpipe Music by Cascadia Piper:</h3>
-      <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
-
+      <h1>Music by Cascadia Piper:</h1>
+      <p class="music">Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
+    
       <section class="audio">
         <h3>Amazing Grace</h3>
         <audio controls>
@@ -41,9 +41,9 @@
         <audio controls>
           <source src="../audio/calum-princess.mp3" type="audio/mpeg">
         </audio>
-        <h3>Dark Island</h3>
+        <h3>Cameronian Rant</h3>
         <audio controls>
-          <source src="../audio/dark-island.mp3" type="audio/mpeg">
+          <source src="../audio/cameronian-rant.mp3" type="audio/mpeg">
         </audio>
         <h3>Little Cascade</h3>
         <audio controls>
@@ -62,6 +62,12 @@
           <source src="../audio/tuning-phrase.mp3" type="audio/mpeg">
         </audio>
       </section>
+
+      <figure>
+        <img src="../images/arsenal-piping.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
+        <figcaption>Cascadia Piper performing in Portland, Oregon</figcaption>
+      </figure>
+
     </main>
     <?php include '../includes/footer.php'; ?>
     
