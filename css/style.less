@@ -62,7 +62,7 @@ body {
     left: 5px;
     right: 5px;
     height: 2px;
-    background: #02D5FD;
+    background: @bright;
   }
   
   .hamburger-menu span:before, .hamburger-menu span:after {
@@ -71,7 +71,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #02D5FD;
+    background-color: @bright;
     content: "";
   }
   
@@ -127,7 +127,7 @@ body {
     transition: all 0.5s ease;
   }
   
-  .menu-list a:hover { color: #02D5FD; }
+  .menu-list a:hover { color: @bright; }
   
   .menu-overlay {
     transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
@@ -141,7 +141,7 @@ body {
     z-index: 1111;
   }
 
-
+  // Header and hero image
   header.hero {
     background-image: url(../images/cascadia-landscape.jpg);
     background-size: cover;
@@ -163,72 +163,66 @@ body {
       padding-bottom: 1rem;
     }
   }
+
+  // Main - for every page
   main {
     background-color: @light;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 1rem 3rem;
+    padding: 2rem 1rem;
+
     h1 {
       font-size: 1.8rem;
       font-weight: 700;
       padding-bottom: 1rem;
     }
-    h2 {
-      font-size: 1.5rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-    }
+
+    h2 { font-size: 1.5rem; }
+
+    h3 { font-size: 1.3rem; }
+
     p {
       color: @dark;
       font-size: 1rem;
       line-height: 1.5;
       padding: .5rem 0 1rem;
     }
-    figure {
+
+    .photo {
       font-size: .8rem;
       text-align: center;
       padding: 0 2rem;
     }
-    figcaption {
-      line-height: 1.3;
-    }
+
+    figcaption { line-height: 1.3; }
+
     .main-photo {
       border: 3px solid @mid;
       border-radius: 1rem;
       max-width: 100%;
       margin: 2rem auto .3rem;
     }
-    .photos {
-      display: grid;
-      grid-template-rows: auto;
-      justify-items: center;
-      grid-gap: 2rem;
-      padding: 1rem;
-      img {
-        max-width: 100%;
-      }
-    }
+
+    // Services
     .services {
       h3 {
         background-image: linear-gradient(to bottom, @sky, @blue);
         border-radius: 1rem;
         color: @light;
         padding: 1rem;
+        margin: 0 1rem;
         text-align: center;
       }
-      p {
-        padding: 1rem 0 2rem;
-      }
+      p { padding: 1rem 0 2rem; }
+
       .descriptions {
-        p {
-          padding: 1rem 1rem 2rem;
-        }
+        p { padding: 1rem 1rem 2rem; }
       }
     }
-    .music {
-      padding-bottom: 2rem;  
-    }
+
+    // Music
+    .music { padding-bottom: 2rem; }
+
     .audio {
       background-image: linear-gradient(to bottom, @sky, @blue);
       display: flex;
@@ -240,23 +234,36 @@ body {
         padding: 1rem;
         text-align: center;
       }
-      audio {
-        margin: 0 auto 1rem;
-      }
+      audio { margin: 0 auto 1rem; }
     }
+
+    // Photos
+    .photos {
+      display: grid;
+      grid-template-rows: auto;
+      justify-items: center;
+      grid-gap: 2rem;
+      padding: 1rem;
+
+      img { max-width: 100%; }
+    }
+
+    // Contact
     .contact {
       display: grid;
-      .form-container {
-        margin: 0 1rem;
-      }
+
+      .form-container { margin: 0 1rem; }
+
       .contact-form {
         width: 100%;
+
         input,
         textarea {
           margin: .3rem 0 1rem;
           padding: .2rem;
           width: calc(100% - 1rem);
         }
+
         button {
           background-color: @blue;
           border: 2px solid @sky;
@@ -268,6 +275,7 @@ body {
           padding: .5rem .8rem;
           transform: scale(1);
           transition: all .5s ease-in-out;
+
           &:hover {
             transform: scale(1.1);
             transition: all .5s ease-in-out;
@@ -276,14 +284,19 @@ body {
       }
     }
   }
+
   aside {
     background-color: @light;
+
     .facebook-feed {
       display: flex;
       justify-content: center;
-      padding: 3rem 0;
+      padding: 2rem .5rem 3rem;
+      margin: 0 auto;
     }
   }
+
+  // Footer
   footer {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -299,20 +312,20 @@ body {
       color: @white;
       line-height: 1.5;
     }
+
     small {
       color: @light;
       line-height: 2;
     }
 
-    .address {
-      padding-bottom: .75rem;
-    }
+    .address { padding-bottom: .75rem; }
 
     .social {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: .75rem;
+
       a {
         color: @white;
         &:hover {
@@ -323,19 +336,17 @@ body {
 
     .copy {
       padding-bottom: .75rem;
-      small {
-        font-size: .8rem;
-      }
+
+      small { font-size: .8rem; }
     }
 
     .atd-icon {
       margin: 0 auto;
-      img {
-        max-width: 70px;
-      }
-      .link-logo {
-        display: none;
-      }
+
+      img { max-width: 70px; }
+
+      .link-logo { display: none; }
+
       .link-text {
         color: @mid;
         text-decoration: none;
@@ -346,6 +357,7 @@ body {
       display: inline-block;
       margin: 0.2rem 0.7rem;
       font-size: 2rem;
+
       &:hover {
         color: @mid;
         text-decoration: none;
@@ -354,33 +366,186 @@ body {
   }
 }
 
-@media (min-width: 700px) {
-  // Header
-  .hero {
-    padding: 6rem 0;
-  }
-  // Index
-  .wrapper {
-    display: grid;
-    grid-template-columns: 66% 1fr;
-    .intro {
-      padding: 3rem;
+@media (min-width: 500px) {
+  body {
+    // Header
+    .hero { padding: 4rem 0; }
+
+    main {
+      // Home
+      .wrapper {
+        padding: 2rem;
+
+        .photo {
+          max-width: 70%;
+          margin: 0 auto;
+        }
+      }
+     
+      // Services
+      .services {
+        padding: 2rem;
+
+        p { padding: 1rem 0 3rem; }
+
+        h3 { margin: 0 1rem; }
+      }
+
+      // Music
+      .music {
+        padding: 2rem;
+      }
+      .audio {
+        h3:first-of-type { padding-top: 2rem; }
+
+        audio:last-of-type { padding-bottom: 2rem; }
+      }
+      .music-photo {
+        max-width: 70%;
+        margin: 4rem auto .3rem;
+      }
+
+      // Photos
+      .photos { grid-template-columns: repeat(2, 1fr); }
+
+      // Contact
+      .contact-info { padding: 2rem; }
+
+      .form-container { padding: 1rem; }
     }
-    figure {
-      padding: 3rem 3rem 0 0;
-    }
-    .main-photo {
-      margin: 0 auto .5rem;
+    // Footer
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "address social"
+        "copy copy"
+        "atd atd";
+
+      .address { grid-area: address; }
+
+      .social {
+        grid-area: social;
+        align-items: center;
+      }
+
+      .copy { grid-area: copy; }
+
+      .atd-icon { grid-area: atd; }
     }
   }
-  // Services
-  .services {
-    padding: 2rem;
-  }
- 
-  // Photos
-  .photos {
-    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  body {
+    main {
+
+      // Home
+      .wrapper {
+        display: grid;
+        grid-template-columns: 66% 1fr;
+        grid-template-areas:
+          "intro intro"
+          "text photo";
+        
+        .intro {
+          grid-area: intro;
+          padding: 0 1rem 1.5rem;
+        }
+
+        .text {
+          grid-area: text;
+          padding: 0 1rem;
+        }
+
+        .photo {
+          grid-area: photo;
+          max-width: 100%;
+          padding: 0 1rem;
+
+          .main-photo{ margin: 0 auto; }
+
+        }
+      }
+
+      // Services
+      .descriptions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+
+        .photo { display: grid; }
+        
+        .main-photo {
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+
+      // Music
+      .music-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+          "music audio"
+          "image audio";
+        grid-gap: 1rem;
+      }
+      .music { grid-area: music; }
+
+      .audio {
+        grid-area: audio;
+        margin: -2rem -1rem;
+      }
+
+      .music-photo {
+        grid-area: image;
+        margin: 0 auto 0 2rem;
+
+        .main-photo { margin: 0 auto .3rem; }
+      }
+
+      // Contact
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        grid-template-rows: 220px 550px;
+        grid-template-areas:
+          "info feed"
+          "form feed";
+
+        .contact-info {
+          grid-area: info;
+        }
+
+        .form-container {
+          grid-area: form;
+        }
+
+        .facebook-feed {
+          grid-area: feed;
+        }
+      }
+    }
+
+    // Footer
+    .footer {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "address social copy"
+        "atd atd atd-logo";
+
+      .social { align-items: start; }
+
+      .link-logo {
+        display: block;
+        grid-area: atd-logo;
+      }
+    }
   }
 }
 

@@ -25,49 +25,52 @@
     <?php include '../includes/header.php'; ?>
     
 		<main>
-      <h1>Music by Cascadia Piper:</h1>
-      <p class="music">Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
-    
-      <section class="audio">
-        <h3>Amazing Grace</h3>
-        <audio controls>
-          <source src="../audio/amazing-grace.mp3" type="audio/mpeg">
-        </audio>
-        <h3>At Long Last</h3>
-        <audio controls>
-          <source src="../audio/at-long-last.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Calum Princess</h3>
-        <audio controls>
-          <source src="../audio/calum-princess.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Cameronian Rant</h3>
-        <audio controls>
-          <source src="../audio/cameronian-rant.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Little Cascade</h3>
-        <audio controls>
-          <source src="../audio/little-cascade.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Maggie Cameron</h3>
-        <audio controls>
-          <source src="../audio/maggie-cameron.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Mist Covered Mountains</h3>
-        <audio controls>
-          <source src="../audio/mist-covered-mountains.mp3" type="audio/mpeg">
-        </audio>
-        <h3>Donald MacLennan's Tuning Phrase</h3>
-        <audio controls>
-          <source src="../audio/tuning-phrase.mp3" type="audio/mpeg">
-        </audio>
-      </section>
+      <div class="music-wrapper">
+        <div class="music">
+          <h1>Music by Cascadia Piper:</h1>
+          <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
+        </div>
 
-      <figure>
-        <img src="../images/arsenal-piping.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
-        <figcaption>Cascadia Piper performing in Portland, Oregon</figcaption>
-      </figure>
+        <section class="audio">
+          <h3>Amazing Grace</h3>
+          <audio controls>
+            <source src="../audio/amazing-grace.mp3" type="audio/mpeg">
+          </audio>
+          <h3>At Long Last</h3>
+          <audio controls>
+            <source src="../audio/at-long-last.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Calum Princess</h3>
+          <audio controls>
+            <source src="../audio/calum-princess.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Cameronian Rant</h3>
+          <audio controls>
+            <source src="../audio/cameronian-rant.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Little Cascade</h3>
+          <audio controls>
+            <source src="../audio/little-cascade.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Maggie Cameron</h3>
+          <audio controls>
+            <source src="../audio/maggie-cameron.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Mist Covered Mountains</h3>
+          <audio controls>
+            <source src="../audio/mist-covered-mountains.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Donald MacLennan's Tuning Phrase</h3>
+          <audio controls>
+            <source src="../audio/tuning-phrase.mp3" type="audio/mpeg">
+          </audio>
+        </section>
 
+        <figure class="music-photo">
+          <img src="../images/arsenal-piping.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
+          <figcaption>Cascadia Piper performing in Portland, Oregon</figcaption>
+        </figure>
+      </div>
     </main>
     <?php include '../includes/footer.php'; ?>
     

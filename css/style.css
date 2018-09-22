@@ -166,7 +166,7 @@ body main {
   background-color: #F3F3F3;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 2rem 1rem;
 }
 body main h1 {
   font-size: 1.8rem;
@@ -185,7 +185,7 @@ body main p {
   line-height: 1.5;
   padding: .5rem 0 1rem;
 }
-body main figure {
+body main .photo {
   font-size: .8rem;
   text-align: center;
   padding: 0 2rem;
@@ -199,21 +199,12 @@ body main .main-photo {
   max-width: 100%;
   margin: 2rem auto .3rem;
 }
-body main .photos {
-  display: grid;
-  grid-template-rows: auto;
-  justify-items: center;
-  grid-gap: 2rem;
-  padding: 1rem;
-}
-body main .photos img {
-  max-width: 100%;
-}
 body main .services h3 {
   background-image: linear-gradient(to bottom, #095192, #022460);
   border-radius: 1rem;
   color: #F3F3F3;
   padding: 1rem;
+  margin: 0 1rem;
   text-align: center;
 }
 body main .services p {
@@ -239,6 +230,16 @@ body main .audio h3 {
 }
 body main .audio audio {
   margin: 0 auto 1rem;
+}
+body main .photos {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+body main .photos img {
+  max-width: 100%;
 }
 body main .contact {
   display: grid;
@@ -277,7 +278,8 @@ body aside {
 body aside .facebook-feed {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 2rem .5rem 3rem;
+  margin: 0 auto;
 }
 body footer {
   display: grid;
@@ -341,28 +343,150 @@ body footer .svg-inline--fa:hover {
   color: #8893A0;
   text-decoration: none;
 }
-@media (min-width: 700px) {
-  .hero {
-    padding: 6rem 0;
+@media (min-width: 500px) {
+  body .hero {
+    padding: 4rem 0;
   }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 66% 1fr;
-  }
-  .wrapper .intro {
-    padding: 3rem;
-  }
-  .wrapper figure {
-    padding: 3rem 3rem 0 0;
-  }
-  .wrapper .main-photo {
-    margin: 0 auto .5rem;
-  }
-  .services {
+  body main .wrapper {
     padding: 2rem;
   }
-  .photos {
+  body main .wrapper .photo {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  body main .services {
+    padding: 2rem;
+  }
+  body main .services p {
+    padding: 1rem 0 3rem;
+  }
+  body main .services h3 {
+    margin: 0 1rem;
+  }
+  body main .music {
+    padding: 2rem;
+  }
+  body main .audio h3:first-of-type {
+    padding-top: 2rem;
+  }
+  body main .audio audio:last-of-type {
+    padding-bottom: 2rem;
+  }
+  body main .music-photo {
+    max-width: 70%;
+    margin: 4rem auto .3rem;
+  }
+  body main .photos {
     grid-template-columns: repeat(2, 1fr);
+  }
+  body main .contact-info {
+    padding: 2rem;
+  }
+  body main .form-container {
+    padding: 1rem;
+  }
+  body .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "address social" "copy copy" "atd atd";
+  }
+  body .footer .address {
+    grid-area: address;
+  }
+  body .footer .social {
+    grid-area: social;
+    align-items: center;
+  }
+  body .footer .copy {
+    grid-area: copy;
+  }
+  body .footer .atd-icon {
+    grid-area: atd;
+  }
+}
+@media (min-width: 768px) {
+  body main .wrapper {
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-template-areas: "intro intro" "text photo";
+  }
+  body main .wrapper .intro {
+    grid-area: intro;
+    padding: 0 1rem 1.5rem;
+  }
+  body main .wrapper .text {
+    grid-area: text;
+    padding: 0 1rem;
+  }
+  body main .wrapper .photo {
+    grid-area: photo;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  body main .wrapper .photo .main-photo {
+    margin: 0 auto;
+  }
+  body main .descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  body main .descriptions .photo {
+    display: grid;
+  }
+  body main .descriptions .main-photo {
+    padding: 0;
+    margin: 0 auto;
+  }
+  body main .music-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "music audio" "image audio";
+    grid-gap: 1rem;
+  }
+  body main .music {
+    grid-area: music;
+  }
+  body main .audio {
+    grid-area: audio;
+    margin: -2rem -1rem;
+  }
+  body main .music-photo {
+    grid-area: image;
+    margin: 0 auto 0 2rem;
+  }
+  body main .music-photo .main-photo {
+    margin: 0 auto .3rem;
+  }
+  body main .contact {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 220px 550px;
+    grid-template-areas: "info feed" "form feed";
+  }
+  body main .contact .contact-info {
+    grid-area: info;
+  }
+  body main .contact .form-container {
+    grid-area: form;
+  }
+  body main .contact .facebook-feed {
+    grid-area: feed;
+  }
+  body .footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "address social copy" "atd atd atd-logo";
+  }
+  body .footer .social {
+    align-items: start;
+  }
+  body .footer .link-logo {
+    display: block;
+    grid-area: atd-logo;
   }
 }
 @media (min-width: 900px) {
