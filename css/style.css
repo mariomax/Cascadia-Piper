@@ -362,6 +362,9 @@ body footer .atd-credit .link-text {
   color: #8893A0;
   text-decoration: none;
 }
+body footer .atd-credit .link-logo {
+  display: none;
+}
 body footer .svg-inline--fa {
   display: inline-block;
   margin: 0.2rem 0.7rem;
@@ -552,6 +555,9 @@ body footer .svg-inline--fa:hover {
   body .footer .atd-credit {
     grid-area: atd;
   }
+  body .footer .atd-credit a:hover {
+    color: #FFF;
+  }
 }
 @media (min-width: 900px) {
   body .menu-list {
@@ -580,6 +586,9 @@ body footer .svg-inline--fa:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
+  body main .services .descriptions .photo {
+    display: none;
+  }
   body main .photos {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -599,8 +608,9 @@ body footer .svg-inline--fa:hover {
     flex-direction: column;
   }
   body .footer .atd-credit .link-logo {
-    height: 3rem;
-    width: 4rem;
-    margin-top: .7rem;
+    display: block;
+    margin: .7rem auto 0;
+    height: 2.5rem;
+    width: auto;
   }
 }

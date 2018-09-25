@@ -45,7 +45,7 @@
 
 	<div class="atd-credit">
 		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-text">Website by Anchor Tag Design</a>
-		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-logo-links.png" alt="Anchor Tag Design's logo" title="Anchor Tag Design" class="link-logo"></a>
+		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-icon.png" alt="Anchor Tag Design's logo" title="Anchor Tag Design" class="link-logo"></a>
 	</div>
 
 </footer>

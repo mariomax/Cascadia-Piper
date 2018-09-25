@@ -389,6 +389,8 @@ body {
         color: @mid;
         text-decoration: none;
       }
+
+      .link-logo { display: none; }
     }
 
     .svg-inline--fa {
@@ -629,7 +631,11 @@ body {
         justify-content: space-around;
     }
 
-      .atd-credit { grid-area: atd; }
+      .atd-credit { 
+        grid-area: atd;
+
+        a:hover { color: @white; }
+      }
     }
   }
 }
@@ -664,8 +670,12 @@ body {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 2rem;
+
+          .photo { display: none; }
         }
       }
+
+      // Photos
       .photos {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -692,9 +702,10 @@ body {
         flex-direction: column;
 
         .link-logo {
-          height: 3rem;
-          width: 4rem;
-          margin-top: .7rem;
+          display: block;
+          margin: .7rem auto 0;
+          height: 2.5rem;
+          width: auto;
         }
       }
     }

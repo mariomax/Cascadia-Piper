@@ -45,7 +45,6 @@
           </div>
           <figure class="photo">
             <img src="../images/blue-tie.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
-            <!-- <figcaption>The Cascadia Piper: a feather in his cap.</figcaption> -->
           </figure>
         </div>
       </section>
