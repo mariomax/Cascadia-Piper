@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="John Goff: The Cascadia Piper" />
     <meta property="og:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta property="og:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
+    <meta property="og:image" content="https://www.cascadiapiper.com/OG-markup.jpg" />
     <meta property="fb:app_id" content="2131529450393664" />
 
     <!-- Twitter Card markup -->
@@ -23,7 +23,7 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="Cascadia Piper | Bagpiper in Portland Oregon" />
     <meta name="twitter:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta name="twitter:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
+    <meta name="twitter:image" content="https://www.cascadiapiper.com/OG-markup.jpg" />
 
     <!-- Stylesheets in the css folder -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
