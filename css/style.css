@@ -6,6 +6,8 @@ Programmer: Mario Lopriore
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700');
 body {
   font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 body h1,
 body h2,
@@ -169,7 +171,6 @@ body header.hero p {
 }
 body main {
   background-color: #F3F3F3;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -412,7 +413,8 @@ body footer .svg-inline--fa:hover {
   body main .form-container {
     padding: 1rem;
   }
-  body main .success {
+  body main .success,
+  body main .four0four {
     padding: 2rem;
   }
   body .footer {
@@ -521,8 +523,8 @@ body footer .svg-inline--fa:hover {
   }
   body main .contact {
     display: grid;
-    grid-template-columns: 1fr 40%;
-    grid-template-rows: 220px 500px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 220px 525px;
     grid-template-areas: "info feed" "form feed";
   }
   body main .contact .contact-info {
@@ -534,7 +536,8 @@ body footer .svg-inline--fa:hover {
   body main .contact .facebook-feed {
     grid-area: feed;
   }
-  body main .success button {
+  body main .success button,
+  body main .four0four button {
     margin-top: 2rem;
   }
   body .footer {
@@ -563,6 +566,9 @@ body footer .svg-inline--fa:hover {
   body main .wrapper p {
     font-size: 1.2rem;
   }
+  body main .wrapper button {
+    margin: 2rem 0 0 1rem;
+  }
   body main .services h1 {
     padding: 0 4rem;
   }
@@ -576,5 +582,25 @@ body footer .svg-inline--fa:hover {
   }
   body main .photos {
     grid-template-columns: repeat(3, 1fr);
+  }
+  body main .contact {
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-rows: 220px 525px;
+  }
+}
+@media (min-width: 1200px) {
+  body .footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "address social copy atd";
+  }
+  body .footer .atd-credit {
+    display: flex;
+    flex-direction: column;
+  }
+  body .footer .atd-credit .link-logo {
+    height: 3rem;
+    width: 4rem;
+    margin-top: .7rem;
   }
 }

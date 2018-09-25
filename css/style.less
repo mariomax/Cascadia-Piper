@@ -4,6 +4,8 @@
 
 body {
   font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
   h1,
   h2,
   h3,
@@ -175,7 +177,7 @@ body {
   // Main - for every page
   main {
     background-color: @light;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 
@@ -450,7 +452,8 @@ body {
       .form-container { padding: 1rem; }
 
       // Success 
-      .success { padding: 2rem; }
+      .success,
+      .four0four { padding: 2rem; }
     }
     // Footer
     .footer {
@@ -587,8 +590,8 @@ body {
       // Contact
       .contact {
         display: grid;
-        grid-template-columns: 1fr 40%;
-        grid-template-rows: 220px 500px;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 220px 525px;
         grid-template-areas:
           "info feed"
           "form feed";
@@ -606,8 +609,9 @@ body {
         }
       }
 
-      // Success
-      .success {
+      // Success and Error
+      .success,
+      .four0four {
         button { margin-top: 2rem; }
       }
     }
@@ -636,9 +640,7 @@ body {
     .menu-list {
       justify-content: flex-end;
 
-      a {
-        padding-right: 2.5rem;
-      }
+      a { padding-right: 2.5rem; }
     }
 
     main {
@@ -647,6 +649,8 @@ body {
         grid-template-rows: auto auto;
 
         p { font-size: 1.2rem; }
+
+        button { margin: 2rem 0 0 1rem; }
       }
       // Services
       .services {
@@ -664,6 +668,34 @@ body {
       }
       .photos {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      // Contact
+      .contact {
+        grid-template-columns: 1.8fr 1fr;
+        grid-template-rows: 220px 525px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    .footer {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "address social copy atd";
+      
+      .atd-credit {
+        display: flex;
+        flex-direction: column;
+
+        .link-logo {
+          height: 3rem;
+          width: 4rem;
+          margin-top: .7rem;
+        }
       }
     }
   }
