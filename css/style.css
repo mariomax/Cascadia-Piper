@@ -149,7 +149,7 @@ body .menu-overlay {
   z-index: 1111;
 }
 body header.hero {
-  background-image: url(../images/cascadia-landscape.jpg);
+  background-image: url(../images/cascadia-landscape-700.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,8 @@ body main p {
   line-height: 1.5;
   padding: .5rem 0 1rem;
 }
-body main button {
+body main button,
+body main .button {
   background-color: #095192;
   border: 2px solid #022460;
   box-shadow: 2px 2px 5px #090909;
@@ -199,14 +200,18 @@ body main button {
   font-family: 'Signika', sans-serif;
   font-size: 1.3rem;
   padding: .5rem .8rem;
+  max-width: 55%;
+  text-align: center;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
-body main button:hover {
+body main button:hover,
+body main .button:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
-body main button a {
+body main button a,
+body main .button a {
   color: #FFF;
   text-decoration: none;
 }
@@ -334,8 +339,11 @@ body footer small {
 body footer .address {
   padding-bottom: .75rem;
 }
-body footer .address .tel {
-  color: #FFF important;
+body footer .address a.phone {
+  color: #FFF !important;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  text-decoration: none;
 }
 body footer .social {
   display: flex;
@@ -362,7 +370,7 @@ body footer .atd-credit .link-text {
   color: #8893A0;
   text-decoration: none;
 }
-body footer .atd-credit .link-logo {
+body footer .atd-credit a .link-logo {
   display: none;
 }
 body footer .svg-inline--fa {
@@ -451,6 +459,9 @@ body footer .svg-inline--fa:hover {
     flex-direction: row;
     justify-content: space-around;
   }
+  body header.hero {
+    background-image: url('../images/cascadia-landscape.jpg');
+  }
   body header.hero .logo {
     margin: 3.5rem 0 2.5rem;
   }
@@ -467,8 +478,8 @@ body footer .svg-inline--fa:hover {
     grid-area: text;
     padding: 0 1rem;
   }
-  body main .wrapper button {
-    margin: 2rem 7rem 0;
+  body main .wrapper .button {
+    margin: 2rem 7rem 0 1rem;
   }
   body main .wrapper .photo {
     grid-area: photo;
@@ -572,8 +583,9 @@ body footer .svg-inline--fa:hover {
   body main .wrapper p {
     font-size: 1.2rem;
   }
-  body main .wrapper button {
+  body main .wrapper .button {
     margin: 2rem 0 0 1rem;
+    max-width: 33%;
   }
   body main .services h1 {
     padding: 0 4rem;

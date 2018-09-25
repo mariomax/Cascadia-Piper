@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="John Goff: The Cascadia Piper" />
     <meta property="og:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta property="og:image" content="https://www.worldwidewario.com/images/cascadia_16x9.png" />
+    <meta property="og:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
     <meta property="fb:app_id" content="2131529450393664" />
 
     <!-- Twitter Card markup -->
@@ -23,17 +23,14 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="Cascadia Piper | Bagpiper in Portland Oregon" />
     <meta name="twitter:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
 
     <!-- Stylesheets in the css folder -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   
     <!-- jQuery script -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -96,7 +93,7 @@
         <div>
         <p class="text">John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. He prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
 
-        <button><a href="https://www.cascadiapiper.com/contact/contact.php">Contact Form &gt;	&gt;</a></button>
+        <div class="button"><a href="https://www.cascadiapiper.com/contact/contact.php">Contact Form &gt;	&gt;</a></div>
         </div>
         
         <figure class="photo">

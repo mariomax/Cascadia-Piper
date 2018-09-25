@@ -1,9 +1,7 @@
 <footer class="footer" id="footer">
-<!-- Remove link from phone number. -->
-<meta name="format-detection" content="telephone=no">
 
 	<div class="address">
-		<p class="tel">(503) 960-5599</p>
+		<a href="tel:+1-503-960-5599" class="phone">(503) 960-5599</a>
 		<p>P.O. Box 15143<br>
 		Portland, OR 97293</p>
 	</div>

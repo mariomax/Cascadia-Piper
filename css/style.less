@@ -151,7 +151,7 @@ body {
 
   // Header and hero image
   header.hero {
-    background-image: url(../images/cascadia-landscape.jpg);
+    background-image: url(../images/cascadia-landscape-700.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -198,7 +198,8 @@ body {
       padding: .5rem 0 1rem;
     }
 
-    button {
+    button,
+    .button {
       background-color: @sky;
       border: 2px solid @blue;
       box-shadow: 2px 2px 5px @dark;
@@ -206,6 +207,8 @@ body {
       font-family: 'Signika', sans-serif;
       font-size: 1.3rem;
       padding: .5rem .8rem;
+      max-width: 55%;
+      text-align: center;
       transform: scale(1);
       transition: all .5s ease-in-out;
 
@@ -359,7 +362,12 @@ body {
     .address { 
       padding-bottom: .75rem; 
 
-      .tel { color: @white important; }
+      a.phone {
+        color: @white !important;
+        font-family: 'Noto Serif', serif;
+        line-height: 1.8;
+        text-decoration: none;
+      }
     }
 
     .social {
@@ -390,7 +398,9 @@ body {
         text-decoration: none;
       }
 
-      .link-logo { display: none; }
+      a {
+        .link-logo { display: none; }
+      }
     }
 
     .svg-inline--fa {
@@ -498,6 +508,7 @@ body {
 
     // Header and hero image
     header.hero {
+      background-image: url('../images/cascadia-landscape.jpg');
       .logo {
         margin: 3.5rem 0 2.5rem;
       }
@@ -523,7 +534,7 @@ body {
           padding: 0 1rem;
         }
 
-        button { margin: 2rem 7rem 0; }
+        .button { margin: 2rem 7rem 0 1rem; }
 
         .photo {
           grid-area: photo;
@@ -656,7 +667,10 @@ body {
 
         p { font-size: 1.2rem; }
 
-        button { margin: 2rem 0 0 1rem; }
+        .button { 
+          margin: 2rem 0 0 1rem;
+          max-width: 33%;
+        }
       }
       // Services
       .services {

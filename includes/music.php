@@ -8,7 +8,22 @@
     <meta name="description" content="Cascadia Piper bagpipe services include: parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends. (503) 960-5599" />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
 
-		<title>Cascadia Piper: Music</title>
+    <title>Cascadia Piper: Music</title>
+    
+    <!-- Facebook Open Graph markup -->
+    <meta property="og:url" content="https://www.cascadiapiper.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="John Goff: The Cascadia Piper" />
+    <meta property="og:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
+    <meta property="og:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
+    <meta property="fb:app_id" content="2131529450393664" />
+
+    <!-- Twitter Card markup -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="Cascadia Piper | Bagpiper in Portland Oregon" />
+    <meta name="twitter:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
+    <meta name="twitter:image" content="https://www.anchortagdesign.com/piper/OG-markup.jpg" />
 
     <!-- Stylesheets in the css folder -->
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
@@ -67,7 +82,7 @@
         </section>
 
         <figure class="music-photo">
-          <img src="../images/arsenal-piping.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
+          <img src="../images/backyard-piping.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
           <figcaption>Cascadia Piper performing in Portland, Oregon</figcaption>
         </figure>
       </div>
