@@ -6,7 +6,6 @@
     </button>
   </div>
   <nav id="navbar" class="menu-list">
-    <a href="../index.php">Home</a><br>
     <a href="includes/services.php">Services</a><br>
     <a href="includes/music.php">Music</a><br>
     <a href="includes/photos.php">Photos</a><br>

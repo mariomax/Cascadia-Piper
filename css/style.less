@@ -29,6 +29,12 @@ body {
     font-family: 'Noto Serif', serif;
   }
 
+  figcaption {
+    font-size: .8rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
   // All the navigation markup...
   .hamburger-menu-wrapper {
     background: @dark;
@@ -151,11 +157,13 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
+
     .logo {
       height: 10rem;
       width: 10rem;
       padding: 2.5rem 0;
     }
+
     p {
       font-family: 'Signika', sans-serif;
       font-size: 1.2rem;
@@ -188,6 +196,28 @@ body {
       padding: .5rem 0 1rem;
     }
 
+    button {
+      background-color: @sky;
+      border: 2px solid @blue;
+      box-shadow: 2px 2px 5px @dark;
+      border-radius: 1rem;
+      font-family: 'Signika', sans-serif;
+      font-size: 1.3rem;
+      padding: .5rem .8rem;
+      transform: scale(1);
+      transition: all .5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all .5s ease-in-out;
+      }
+
+      a {
+        color: @white;
+        text-decoration: none;
+      }
+    }
+
     .photo {
       font-size: .8rem;
       text-align: center;
@@ -217,6 +247,12 @@ body {
 
       .descriptions {
         p { padding: 1rem 1rem 2rem; }
+
+        .photo {
+          .main-photo { display: none; }
+
+          figcaption { display: none; }
+        }
       }
     }
 
@@ -265,8 +301,8 @@ body {
         }
 
         button {
-          background-color: @blue;
-          border: 2px solid @sky;
+          background-color: @sky;
+          border: 2px solid @blue;
           box-shadow: 2px 2px 5px @dark;
           border-radius: 1rem;
           color: @white;
@@ -301,7 +337,7 @@ body {
     display: grid;
     grid-template-rows: repeat(3, auto);
     justify-content: center;
-    background: @dark;
+    background: @blue;
     background-image: url("../images/ZenBG-1.png"), url("../images/ZenBG-2.png");
     background-repeat: repeat-x, repeat;
     color: @white;
@@ -318,7 +354,11 @@ body {
       line-height: 2;
     }
 
-    .address { padding-bottom: .75rem; }
+    .address { 
+      padding-bottom: .75rem; 
+
+      .tel { color: @white important; }
+    }
 
     .social {
       display: flex;
@@ -340,12 +380,8 @@ body {
       small { font-size: .8rem; }
     }
 
-    .atd-icon {
+    .atd-credit {
       margin: 0 auto;
-
-      img { max-width: 70px; }
-
-      .link-logo { display: none; }
 
       .link-text {
         color: @mid;
@@ -368,7 +404,7 @@ body {
 
 @media (min-width: 500px) {
   body {
-    // Header
+    // Header and hero image
     .hero { padding: 4rem 0; }
 
     main {
@@ -412,6 +448,9 @@ body {
       .contact-info { padding: 2rem; }
 
       .form-container { padding: 1rem; }
+
+      // Success 
+      .success { padding: 2rem; }
     }
     // Footer
     .footer {
@@ -428,17 +467,37 @@ body {
       .social {
         grid-area: social;
         align-items: center;
+        justify-content: space-around;
       }
 
       .copy { grid-area: copy; }
 
-      .atd-icon { grid-area: atd; }
+      .atd-credit { grid-area: atd; }
     }
   }
 }
 
 @media (min-width: 768px) {
   body {
+    // Navigation
+    .hamburger-menu-wrapper {
+      display: none;
+    }
+
+    .menu-list {
+      background-color: @dark;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    // Header and hero image
+    header.hero {
+      .logo {
+        margin: 3.5rem 0 2.5rem;
+      }
+    }
+
     main {
 
       // Home
@@ -459,6 +518,8 @@ body {
           padding: 0 1rem;
         }
 
+        button { margin: 2rem 7rem 0; }
+
         .photo {
           grid-area: photo;
           max-width: 100%;
@@ -470,17 +531,32 @@ body {
       }
 
       // Services
-      .descriptions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1rem;
+      .services {
+        .descriptions {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          grid-gap: 2rem;
+          
+          h3 { 
+            border-radius: 12px 12px 0 0;
+            margin: 0; }
 
-        .photo { display: grid; }
-        
-        .main-photo {
-          padding: 0;
-          margin: 0 auto;
+          .card {
+            background-color: @white;
+            border: 3px solid @mid;
+            border-radius: 1rem;
+          }
+
+          .photo {
+            padding: 0;
+
+            .main-photo {
+              display: block;
+              margin: 0 auto .3rem;
+            }
+            figcaption { display: block; }
+          }
         }
       }
 
@@ -512,7 +588,7 @@ body {
       .contact {
         display: grid;
         grid-template-columns: 1fr 40%;
-        grid-template-rows: 220px 550px;
+        grid-template-rows: 220px 500px;
         grid-template-areas:
           "info feed"
           "form feed";
@@ -529,6 +605,11 @@ body {
           grid-area: feed;
         }
       }
+
+      // Success
+      .success {
+        button { margin-top: 2rem; }
+      }
     }
 
     // Footer
@@ -537,22 +618,37 @@ body {
       grid-template-rows: repeat(2, auto);
       grid-template-areas:
         "address social copy"
-        "atd atd atd-logo";
+        "atd atd atd";
 
-      .social { align-items: start; }
+      .social {
+        align-items: start;
+        justify-content: space-around;
+    }
 
-      .link-logo {
-        display: block;
-        grid-area: atd-logo;
-      }
+      .atd-credit { grid-area: atd; }
     }
   }
 }
 
 @media (min-width: 900px) {
   body {
+    // Navigation
+    .menu-list {
+      justify-content: flex-end;
+
+      a {
+        padding-right: 2.5rem;
+      }
+    }
+
     main {
-      // Index
+      // Home
+      .wrapper {
+        grid-template-rows: auto auto;
+
+        p { font-size: 1.2rem; }
+      }
+      // Services
       .services {
         h1 {
           padding: 0 4rem; 

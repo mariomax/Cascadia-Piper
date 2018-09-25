@@ -30,7 +30,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   
     <!-- jQuery script -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -90,10 +93,15 @@
           <h1>Cascadia Piper</h1>
           <h2>Bagpiper For Hire: Portland, OR & Vancouver, WA</h2>
         </div>
+        <div>
         <p class="text">John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. He prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
+
+        <button><a href="https://www.cascadiapiper.com/contact/contact.php">Contact Form &gt;	&gt;</a></button>
+        </div>
+        
         <figure class="photo">
           <img src="images/hood-river.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">
-          <figcaption>John Goff in Hood River, Oregon at the Idlewild Cemetary.</figcaption>
+          <figcaption>John Goff in Hood River at the Mt. View Memorial Cemetary.</figcaption>
         </figure>
       </div>  
     </main>
@@ -101,7 +109,7 @@
     
     <!-- JavaScript file from js folder -->
     <script src="js/main.js" type="text/javascript"></script>
-    <script src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script>
 
 	</body>
 </html>

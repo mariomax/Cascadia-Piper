@@ -1,6 +1,6 @@
 <footer class="footer" id="footer">
-<!-- Remove link from phone number.
-<meta name="format-detection" content="telephone=no"> -->
+<!-- Remove link from phone number. -->
+<meta name="format-detection" content="telephone=no">
 
 	<div class="address">
 		<p class="tel">(503) 960-5599</p>
@@ -43,9 +43,8 @@
 		<small>"Loud Pipes Save Lives"</small>
 	</div>	
 
-	<div class="atd-icon">
+	<div class="atd-credit">
 		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-text">Website by Anchor Tag Design</a>
-		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-logo"><img src="images/atd-logo-links.png" alt="anchor tag design logo"></a>
 	</div>
 
 </footer>
