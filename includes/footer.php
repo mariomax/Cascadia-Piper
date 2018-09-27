@@ -28,9 +28,9 @@
 		//-->
 		//]]>
 		</script>
-
+		
 		<!-- Instagram icon -->
-		<a href="https://www.instagram.com/serigraphicsystems/" target="_blank" rel="nofollow noopener" title="instagram feed"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.instagram.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="instagram feed"><i class="fab fa-instagram"></i></a>
 
 		<!-- Facebook icon -->
 		<a href="https://www.facebook.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="facebook page"><i class="fab fa-facebook-square"></i></a>

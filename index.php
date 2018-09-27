@@ -7,7 +7,8 @@
     <meta name="author" content="Cascadia Piper | John Goff" />
     <meta name="description" content="Cascadia Piper: bagpiper for hire. (503) 960-5599 2116 SE Ash street Portland, OR 97216. Bagpipe music for parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends." />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
-
+    <meta name="thumbnail" content="https://www.cascadiapiper.com/images/cascadia_1x1.png" />
+    
     <title>Cascadia Piper</title>
 
     <!-- Facebook Open Graph markup -->
@@ -33,7 +34,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115865634-1"></script>
@@ -78,8 +79,8 @@
       }
     }
     </script>
-
-	</head>
+  </head>
+  
 	<body>
 
     <?php include 'includes/nav.php'; ?>
@@ -89,12 +90,13 @@
       <div class="wrapper">
         <div class="intro">
           <h1>Cascadia Piper</h1>
-          <h2>Bagpiper For Hire: Portland, OR & Vancouver, WA</h2>
+          <h2>Bagpiper For Hire:</h2>
+          <h3>Portland, OR & Vancouver, WA<br /> Performing throughout the Pacific Northwest</h3>
         </div>
         <div>
-        <p class="text">John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area playing 82 times last year alone at events throughout the west coast from Vancouver BC to California’s Bay Area. John’s passion for performing shows in his exacting attitude to make every performance/event as perfect as humanly possible. He prides himself on free and clear communication with every person that contacts him and will always entertain any idea for an event.</p>
+        <p class="text">John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area having played 82 times last year at events throughout the west coast - from Vancouver, BC to California’s Bay Area. John brings his passion for piping, traditional attire, and exacting standards to every performance and event.</p>
 
-        <div class="button"><a href="https://www.cascadiapiper.com/contact/contact.php">Contact Form &gt;	&gt;</a></div>
+        <div class="button"><a href="https://www.cascadiapiper.com/contact/contact.php">Contact &gt;&gt;</a></div>
         </div>
         
         <figure class="photo">

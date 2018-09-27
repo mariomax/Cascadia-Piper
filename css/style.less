@@ -187,9 +187,16 @@ body {
       padding-bottom: 1rem;
     }
 
-    h2 { font-size: 1.5rem; }
+    h2 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+    }
 
-    h3 { font-size: 1.3rem; }
+    h3 {
+      font-size: 1.3rem;
+      padding-bottom: .5rem;
+      line-height: 1.2;
+    }
 
     p {
       color: @dark;
@@ -200,15 +207,7 @@ body {
 
     button,
     .button {
-      background-color: @sky;
-      border: 2px solid @blue;
-      box-shadow: 2px 2px 5px @dark;
-      border-radius: 1rem;
-      font-family: 'Signika', sans-serif;
-      font-size: 1.3rem;
-      padding: .5rem .8rem;
-      max-width: 55%;
-      text-align: center;
+      padding: 1rem 0;
       transform: scale(1);
       transition: all .5s ease-in-out;
 
@@ -218,7 +217,14 @@ body {
       }
 
       a {
+        background-color: @sky;
+        border: 2px solid @blue;
+        box-shadow: 2px 2px 5px @dark;
+        border-radius: 1rem;
         color: @white;
+        font-family: 'Signika', sans-serif;
+        font-size: 1.3rem;
+        padding: .5rem .8rem;
         text-decoration: none;
       }
     }
@@ -293,16 +299,27 @@ body {
     .contact {
       display: grid;
 
+      .contact-info {
+        h3 {
+          padding-bottom: 1rem;
+        }
+
+        h4 {
+          color: @blue;
+          font-size: 1.3rem;
+          padding-bottom: .5rem;
+          text-align: center;
+        }
+      }
       .form-container { margin: 0 1rem; }
 
       .contact-form {
-        width: 100%;
 
         input,
         textarea {
-          margin: .3rem 0 1rem;
+          margin: .3rem auto 1rem;
           padding: .2rem;
-          width: calc(100% - 1rem);
+          width: calc(100% - 3rem);
         }
 
         button {
@@ -330,10 +347,7 @@ body {
     background-color: @light;
 
     .facebook-feed {
-      display: flex;
-      justify-content: center;
-      padding: 2rem .5rem 3rem;
-      margin: 0 auto;
+      display: none;
     }
   }
 
@@ -366,7 +380,6 @@ body {
         color: @white !important;
         font-family: 'Noto Serif', serif;
         line-height: 1.8;
-        text-decoration: none;
       }
     }
 
@@ -603,12 +616,12 @@ body {
       // Contact
       .contact {
         display: grid;
-        grid-template-columns: 400px 1fr;
-        grid-template-rows: 220px 525px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 475px;
         grid-template-areas:
           "info feed"
           "form feed";
-
+        
         .contact-info {
           grid-area: info;
         }
@@ -619,6 +632,10 @@ body {
 
         .facebook-feed {
           grid-area: feed;
+          display: flex;
+          justify-content: center;
+          padding: 2rem 0 3rem;
+          margin: 0 auto;
         }
       }
 
@@ -637,10 +654,15 @@ body {
         "address social copy"
         "atd atd atd";
 
+      .address {
+        a.phone {
+          text-decoration: none;
+        }
+      }
       .social {
         align-items: start;
         justify-content: space-around;
-    }
+      }
 
       .atd-credit { 
         grid-area: atd;
@@ -692,12 +714,6 @@ body {
       // Photos
       .photos {
         grid-template-columns: repeat(3, 1fr);
-      }
-
-      // Contact
-      .contact {
-        grid-template-columns: 1.8fr 1fr;
-        grid-template-rows: 220px 525px;
       }
     }
   }

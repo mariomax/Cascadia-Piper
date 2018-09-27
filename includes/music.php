@@ -7,6 +7,7 @@
     <meta name="author" content="Cascadia Piper | John Goff" />
     <meta name="description" content="Cascadia Piper bagpipe services include: parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends. (503) 960-5599" />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
+    <meta name="thumbnail" content="https://www.cascadiapiper.com/images/cascadia_1x1.png" />
 
     <title>Cascadia Piper: Music</title>
     
@@ -33,8 +34,9 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <!-- Font Awesome CDN -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-		
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>	
+    	
 	<body>
     <?php include '../includes/nav.inc.php'; ?>
     <?php include '../includes/header.php'; ?>
@@ -43,7 +45,7 @@
       <div class="music-wrapper">
         <div class="music">
           <h1>Music by Cascadia Piper:</h1>
-          <p>Well versed in traditional and contemporary music, John recorded a variety of tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes perfect for reflecting and celebrating the lives of loved ones. Quickstep jigs, Hornpipes, and reels set the scene for parties and celebrations.</p>
+          <p>John is well-versed in traditional and contemporary bagpipe music. He has recorded the following tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes. Quickstep jigs, hornpipes, and reels set the scene for parties and celebrations.</p>
         </div>
 
         <section class="audio">
@@ -55,7 +57,7 @@
           <audio controls>
             <source src="../audio/at-long-last.mp3" type="audio/mpeg">
           </audio>
-          <h3>Calum Princess</h3>
+          <h3>Calum and the Princess</h3>
           <audio controls>
             <source src="../audio/calum-princess.mp3" type="audio/mpeg">
           </audio>

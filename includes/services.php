@@ -7,6 +7,7 @@
     <meta name="author" content="Cascadia Piper | John Goff" />
     <meta name="description" content="Cascadia Piper bagpipe services include: parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends. (503) 960-5599" />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
+    <meta name="thumbnail" content="https://www.cascadiapiper.com/images/cascadia_1x1.png" />
 
     <title>Cascadia Piper</title>
     
@@ -33,8 +34,9 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <!-- Font Awesome CDN -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-		
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>	
+
 	<body>
     
     <?php include '../includes/nav.inc.php'; ?>
@@ -52,11 +54,11 @@
           </div>
           <div class="card">
             <h3>Bagpiper for Special Events</h3>
-            <p>Bagpipes are a wonderful way to celebrate! Great for birthday parties, corporate parties, surprise parties, anniversary events, bachelor &amp; bachelorette parties, cultural events, St. Patrick’s Day, parades, and countless other occasions. Contact John to customize the music to fit your special event and has a range of material to work with.</p>
+            <p>Bagpipes are a wonderful way to celebrate! Great for birthday parties, corporate parties, surprise parties, anniversary events, bachelor & bachelorette parties, cultural events, St. Patrick’s Day, parades, and countless other occasions. Contact John to customize the music to fit your special event.</p>
           </div>
           <div class="card">
             <h3>Bagpiper for Weddings</h3>
-            <p>Bagpipes are a festive addition to your special day. Many people enjoy having piping greet guests as they arrive for the event. John can pipe you in for the procession, play during the ceremony, or as you depart for the reception. John has played scores of weddings – big and small – in all settings: from churches and historic sites to vineyards, boats, beaches, mountainsides and parks, and can offer ideas and song suggestions.</p>
+            <p>Bagpipes can be a festive addition to your special day. You may enjoy having the sound of the pipes greet your guests as they arrive. John can pipe you in for the procession, play during the ceremony, or as you depart for the reception. John has played scores of weddings – big and small – in all settings: from churches and historic sites to vineyards, boats, beaches, mountainsides and parks, and can offer ideas and song suggestions.</p>
           </div>
           <figure class="photo">
             <img src="../images/studio-portrait.jpg" alt="Johnn Goff: the Cascadia Piper" class="main-photo">

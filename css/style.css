@@ -181,9 +181,12 @@ body main h1 {
 }
 body main h2 {
   font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 body main h3 {
   font-size: 1.3rem;
+  padding-bottom: .5rem;
+  line-height: 1.2;
 }
 body main p {
   color: #090909;
@@ -193,15 +196,7 @@ body main p {
 }
 body main button,
 body main .button {
-  background-color: #095192;
-  border: 2px solid #022460;
-  box-shadow: 2px 2px 5px #090909;
-  border-radius: 1rem;
-  font-family: 'Signika', sans-serif;
-  font-size: 1.3rem;
-  padding: .5rem .8rem;
-  max-width: 55%;
-  text-align: center;
+  padding: 1rem 0;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
@@ -212,7 +207,14 @@ body main .button:hover {
 }
 body main button a,
 body main .button a {
+  background-color: #095192;
+  border: 2px solid #022460;
+  box-shadow: 2px 2px 5px #090909;
+  border-radius: 1rem;
   color: #FFF;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.3rem;
+  padding: .5rem .8rem;
   text-decoration: none;
 }
 body main .photo {
@@ -280,17 +282,23 @@ body main .photos img {
 body main .contact {
   display: grid;
 }
+body main .contact .contact-info h3 {
+  padding-bottom: 1rem;
+}
+body main .contact .contact-info h4 {
+  color: #022460;
+  font-size: 1.3rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
 body main .contact .form-container {
   margin: 0 1rem;
 }
-body main .contact .contact-form {
-  width: 100%;
-}
 body main .contact .contact-form input,
 body main .contact .contact-form textarea {
-  margin: .3rem 0 1rem;
+  margin: .3rem auto 1rem;
   padding: .2rem;
-  width: calc(99%);
+  width: calc(97%);
 }
 body main .contact .contact-form button {
   background-color: #095192;
@@ -312,10 +320,7 @@ body aside {
   background-color: #F3F3F3;
 }
 body aside .facebook-feed {
-  display: flex;
-  justify-content: center;
-  padding: 2rem .5rem 3rem;
-  margin: 0 auto;
+  display: none;
 }
 body footer {
   display: grid;
@@ -343,7 +348,6 @@ body footer .address a.phone {
   color: #FFF !important;
   font-family: 'Noto Serif', serif;
   line-height: 1.8;
-  text-decoration: none;
 }
 body footer .social {
   display: flex;
@@ -537,8 +541,8 @@ body footer .svg-inline--fa:hover {
   }
   body main .contact {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 220px 525px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 475px;
     grid-template-areas: "info feed" "form feed";
   }
   body main .contact .contact-info {
@@ -549,6 +553,10 @@ body footer .svg-inline--fa:hover {
   }
   body main .contact .facebook-feed {
     grid-area: feed;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+    margin: 0 auto;
   }
   body main .success button,
   body main .four0four button {
@@ -558,6 +566,9 @@ body footer .svg-inline--fa:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "address social copy" "atd atd atd";
+  }
+  body .footer .address a.phone {
+    text-decoration: none;
   }
   body .footer .social {
     align-items: start;
@@ -603,10 +614,6 @@ body footer .svg-inline--fa:hover {
   }
   body main .photos {
     grid-template-columns: repeat(3, 1fr);
-  }
-  body main .contact {
-    grid-template-columns: 1.8fr 1fr;
-    grid-template-rows: 220px 525px;
   }
 }
 @media (min-width: 1200px) {
