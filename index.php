@@ -92,6 +92,7 @@
           <h1>Cascadia Piper</h1>
           <h2>Bagpiper For Hire:</h2>
           <h3>Portland, OR & Vancouver, WA<br /> Performing throughout the Pacific Northwest</h3>
+          <a href="tel:+1-503-960-5599" class="phone">(503) 960-5599</a>
         </div>
         <div>
         <p class="text">John Goff is a second-generation bagpiper and has performed at hundreds of weddings, funerals, celebrations and parties. As a competitive bagpiper since 1984, John has won numerous prizes in bagpipe band and solo competitions. He is one of the most prolific pipers in the Portland area having played 82 times last year at events throughout the west coast - from Vancouver, BC to California’s Bay Area. John brings his passion for piping, traditional attire, and exacting standards to every performance and event.</p>

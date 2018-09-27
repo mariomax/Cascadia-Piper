@@ -198,6 +198,16 @@ body {
       line-height: 1.2;
     }
 
+    a.phone {
+      color: @sky;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .intro {
+      padding-bottom: 1.5rem;
+    }
+
     p {
       color: @dark;
       font-size: 1rem;
@@ -208,11 +218,13 @@ body {
     button,
     .button {
       padding: 1rem 0;
-      transform: scale(1);
+      // transform: scale(1);
+      transform: translate(0, 0);
       transition: all .5s ease-in-out;
-
+      
       &:hover {
-        transform: scale(1.1);
+        // transform: scale(1.1);
+        transform: translate(.5rem, 0);
         transition: all .5s ease-in-out;
       }
 
@@ -292,7 +304,10 @@ body {
       grid-gap: 2rem;
       padding: 1rem;
 
-      img { max-width: 100%; }
+      img { 
+        border-radius: 1rem;
+        max-width: 100%;
+      }
     }
 
     // Contact
@@ -309,6 +324,7 @@ body {
           font-size: 1.3rem;
           padding-bottom: .5rem;
           text-align: center;
+          text-decoration: none;
         }
       }
       .form-container { margin: 0 1rem; }
@@ -331,11 +347,12 @@ body {
           font-family: 'Signika', sans-serif;
           font-size: 1.3rem;
           padding: .5rem .8rem;
-          transform: scale(1);
+          // transform: scale(1);
           transition: all .5s ease-in-out;
-
+          
           &:hover {
-            transform: scale(1.1);
+            transform: translate(3rem, 0);
+            // transform: scale(1.1);
             transition: all .5s ease-in-out;
           }
         }
@@ -391,6 +408,7 @@ body {
 
       a {
         color: @white;
+        font-size: 2rem;
         &:hover {
           color: @mid;
         }

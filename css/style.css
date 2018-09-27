@@ -188,6 +188,14 @@ body main h3 {
   padding-bottom: .5rem;
   line-height: 1.2;
 }
+body main a.phone {
+  color: #095192;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+body main .intro {
+  padding-bottom: 1.5rem;
+}
 body main p {
   color: #090909;
   font-size: 1rem;
@@ -197,12 +205,12 @@ body main p {
 body main button,
 body main .button {
   padding: 1rem 0;
-  transform: scale(1);
+  transform: translate(0, 0);
   transition: all 0.5s ease-in-out;
 }
 body main button:hover,
 body main .button:hover {
-  transform: scale(1.1);
+  transform: translate(0.5rem, 0);
   transition: all 0.5s ease-in-out;
 }
 body main button a,
@@ -277,6 +285,7 @@ body main .photos {
   padding: 1rem;
 }
 body main .photos img {
+  border-radius: 1rem;
   max-width: 100%;
 }
 body main .contact {
@@ -290,6 +299,7 @@ body main .contact .contact-info h4 {
   font-size: 1.3rem;
   padding-bottom: .5rem;
   text-align: center;
+  text-decoration: none;
 }
 body main .contact .form-container {
   margin: 0 1rem;
@@ -309,11 +319,10 @@ body main .contact .contact-form button {
   font-family: 'Signika', sans-serif;
   font-size: 1.3rem;
   padding: .5rem .8rem;
-  transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
 body main .contact .contact-form button:hover {
-  transform: scale(1.1);
+  transform: translate(3rem, 0);
   transition: all 0.5s ease-in-out;
 }
 body aside {
@@ -357,6 +366,7 @@ body footer .social {
 }
 body footer .social a {
   color: #FFF;
+  font-size: 2rem;
 }
 body footer .social a:hover {
   color: #8893A0;
