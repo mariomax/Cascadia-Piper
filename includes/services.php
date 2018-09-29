@@ -44,7 +44,8 @@
     
     <main>
       <section class="services">
-        <h1>Cascadia Piper’s Services:</h1>
+        <h1>Cascadia Piper</h1>
+        <h2>Services Provided:</h2>
         <p>John Goff, the Cascadia Piper offers a variety of services for the community and individuals throughout the Pacific Northwest. His knowledge of traditional music and dress provide authenticity while his background of award winning performances, second-generation bagpiping experience, and integrity will enhance your special event. Special musical requests can be honored by arrangement.</p>
 
         <div class="descriptions">

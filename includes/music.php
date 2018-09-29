@@ -9,7 +9,7 @@
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
     <meta name="thumbnail" content="https://www.cascadiapiper.com/images/cascadia_1x1.png" />
 
-    <title>Cascadia Piper: Music</title>
+    <title>Cascadia Piper</title>
     
     <!-- Facebook Open Graph markup -->
     <meta property="og:url" content="https://www.cascadiapiper.com/" />
@@ -44,7 +44,8 @@
 		<main>
       <div class="music-wrapper">
         <div class="music">
-          <h1>Music by Cascadia Piper:</h1>
+          <h1>Cascadia Piper</h1>
+          <h2>Musical selections:</h2>
           <p>John is well-versed in traditional and contemporary bagpipe music. He has recorded the following tunes to illustrate the varied nature of the bagpipes. Slow aires and retreats convey the melancholy nature of the bagpipes. Quickstep jigs, hornpipes, and reels set the scene for parties and celebrations.</p>
         </div>
 

@@ -43,13 +43,16 @@
     <?php include '../includes/header.php'; ?>
     
     <main>
-      <section class="photos">
-        <img src="../images/by-lake.jpg" alt="John Goff: the Cascadia Piper">
-        <img src="../images/mount-angel.jpg" alt="John Goff: the Cascadia Piper in Mount Angel, OR">
-        <img src="../images/tahoma.jpg" alt="John Goff: the Cascadia Piper in Tacoma, WA">
-        <img src="../images/by-bridge.jpg" alt="John Goff: the Cascadia Piper in Hood River">
-        <img src="../images/by-window.jpg" alt="John Goff: the Cascadia Piper in Portland, OR">
-        <img src="../images/bagpipe-in-backyard.jpg" alt="John Goff: the Cascadia Piper in Hood River">
+      <section class="gallery">
+        <h1>Cascadia Piper</h1>
+        <section class="photos">
+          <img src="../images/by-lake.jpg" alt="John Goff: the Cascadia Piper">
+          <img src="../images/mount-angel.jpg" alt="John Goff: the Cascadia Piper in Mount Angel, OR">
+          <img src="../images/tahoma.jpg" alt="John Goff: the Cascadia Piper in Tacoma, WA">
+          <img src="../images/by-bridge.jpg" alt="John Goff: the Cascadia Piper in Hood River">
+          <img src="../images/by-window.jpg" alt="John Goff: the Cascadia Piper in Portland, OR">
+          <img src="../images/bagpipe-in-backyard.jpg" alt="John Goff: the Cascadia Piper in Hood River">
+        </section>
       </section>
     </main>
 

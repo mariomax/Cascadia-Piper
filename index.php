@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Cascadia Piper | John Goff" />
-    <meta name="description" content="Cascadia Piper: bagpiper for hire. (503) 960-5599 2116 SE Ash street Portland, OR 97216. Bagpipe music for parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends." />
-    <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
+    <meta name="description" content="Cascadia Piper: bagpiper for hire in Oregon and Washington. (503) 960-5599 Bagpipe music for parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new family and friends. 2116 SE Ash street Portland, OR 97216." />
+    <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, Oregon bagpiper" />
     <meta name="thumbnail" content="https://www.cascadiapiper.com/images/cascadia_1x1.png" />
     
     <title>Cascadia Piper</title>
@@ -31,7 +31,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   
     <!-- jQuery script -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -79,6 +79,22 @@
       }
     }
     </script>
+    <!--
+    <PageMap>
+      <DataObject type="bagpiper">
+          <Attribute name="title">Cascadia Piper</Attribute>
+          <Attribute name="author">John Goff</Attribute>
+          <Attribute name="description">Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions.</Attribute>
+          <Attribute name="rating">5</Attribute>
+          <Attribute name="last_update">09/26/2018</Attribute>
+      </DataObject>
+      <DataObject type="thumbnail">
+          <Attribute name="src" value="https://www.cascadiapiper.com/images/cascadia_4x3.png" />
+          <Attribute name="width" value="200" />
+          <Attribute name="height" value="150" />
+      </DataObject>
+    </PageMap>
+    -->
   </head>
   
 	<body>
@@ -106,6 +122,7 @@
         </figure>
       </div>  
     </main>
+    
     <?php include 'includes/footer.php'; ?>
     
     <!-- JavaScript file from js folder -->
