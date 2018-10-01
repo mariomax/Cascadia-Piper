@@ -1,1 +1,665 @@
-@import "https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700";body{font-size:16px;max-width:1200px;margin:0 auto}body h1,body h2,body h3,body h4,body h5,body h6,body a,body label,body small{color:#000;font-family:'Signika',sans-serif}body input,body textarea{color:#090909;font-family:'Noto Serif',serif}body p,body blockquote,body em,body figcaption{color:#090909;font-family:'Noto Serif',serif}body figcaption{font-size:.8rem;line-height:1.3;text-align:center}body .hamburger-menu-wrapper{background:#090909;padding:10px;display:inline-block}body .hamburger-menu{border:0;margin:0 auto;display:block;position:relative;overflow:hidden;padding:0;width:36px;height:36px;font-size:0;text-indent:-9999px;z-index:9999;cursor:pointer;background:transparent}body .hamburger-menu:focus{outline:none}body .hamburger-menu span{display:block;position:absolute;top:17px;left:5px;right:5px;height:2px;background:#02D5FD}body .hamburger-menu span:before,body .hamburger-menu span:after{position:absolute;display:block;left:0;width:100%;height:2px;background-color:#02D5FD;content:""}body .hamburger-menu span:before{top:-7px}body .hamburger-menu span:after{bottom:-7px}body .hamburger-menu span:before,body .hamburger-menu span:after{transition-duration:0.3s,.3s;transition-delay:0.3s,0}body .hamburger-menu span:before{transition-property:top,transform}body .hamburger-menu span::after{transition-property:bottom,transform}body .hamburger-menu.active span{background:none}body .hamburger-menu.active span:before{top:0;transform:rotate(225deg)}body .hamburger-menu.active span:after{bottom:0;transform:rotate(135deg)}body .hamburger-menu.active span:before,body .hamburger-menu.active span:after{transition-delay:0s,.3s}body .menu{background-color:#090909;position:relative;min-width:220px;text-align:center}body .menu-list{display:none;position:absolute;top:100%;width:100%;text-align:center;z-index:9999}body .menu-list a{color:#FFF;text-decoration:none;font-size:18px;display:inline-block;margin:25px 0;transition:all .5s ease}body .menu-list a:hover{color:#02D5FD}body .menu-overlay{transition:margin 300ms cubic-bezier(0.17,0.04,0.03,0.94);display:none;position:absolute;top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,0.9);z-index:1111}body header.hero{background-image:url(../images/cascadia-landscape-700.jpg);background-size:cover;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:auto}body header.hero .logo{height:10rem;width:10rem;padding:2.5rem 0}body header.hero p{font-family:'Signika',sans-serif;font-size:1.2rem;font-weight:700;padding-bottom:1rem}body main{background-color:#F3F3F3;margin:0 auto;padding:2rem 1rem}body main h1{font-size:1.8rem;font-weight:700;padding-bottom:1rem}body main h2{font-size:1.5rem;padding-bottom:1rem}body main h3{font-size:1.3rem;padding-bottom:.5rem;line-height:1.2}body main a.phone{color:#095192;font-size:1.2rem;text-decoration:none}body main .intro{padding-bottom:1.5rem}body main p{color:#090909;font-size:1rem;line-height:1.5;padding:.5rem 0 1rem}body main button,body main .button{padding:1rem 0;transform:translate(0,0);transition:all .5s ease-in-out}body main button:hover,body main .button:hover{transform:translate(0.5rem,0);transition:all .5s ease-in-out}body main button a,body main .button a{background-color:#095192;border:2px solid #022460;box-shadow:2px 2px 5px #090909;border-radius:1rem;color:#FFF;font-family:'Signika',sans-serif;font-size:1.3rem;padding:.5rem .8rem;text-decoration:none}body main .photo{font-size:.8rem;text-align:center;padding:0 2rem}body main figcaption{line-height:1.3}body main .main-photo{border:3px solid #8893A0;border-radius:1rem;max-width:100%;margin:2rem auto .3rem}body main .services h3{background-image:linear-gradient(to bottom,#095192,#022460);border-radius:1rem;color:#F3F3F3;padding:1rem;margin:0 1rem;text-align:center}body main .services p{padding:1rem 0 2rem}body main .services .descriptions p{padding:1rem 1rem 2rem}body main .services .descriptions .photo .main-photo{display:none}body main .services .descriptions .photo figcaption{display:none}body main .music{padding-bottom:2rem}body main .audio{background-image:linear-gradient(to bottom,#095192,#022460);display:flex;flex-direction:column;justify-content:center;margin:-1rem}body main .audio h3{color:#FFF;padding:1rem;text-align:center}body main .audio audio{margin:0 auto 1rem}body main .photos{display:grid;grid-template-rows:auto;justify-items:center;grid-gap:2rem;padding:1rem}body main .photos img{border-radius:1rem;max-width:100%}body main .contact{display:grid}body main .contact .contact-info h3{padding-bottom:1rem}body main .contact .contact-info h4{color:#022460;font-size:1.3rem;padding-bottom:.5rem;text-align:center;text-decoration:none}body main .contact .form-container{margin:0 1rem}body main .contact .contact-form input,body main .contact .contact-form textarea{margin:.3rem auto 1rem;padding:.2rem;width:calc(97%)}body main .contact .contact-form button{background-color:#095192;border:2px solid #022460;box-shadow:2px 2px 5px #090909;border-radius:1rem;color:#FFF;font-family:'Signika',sans-serif;font-size:1.3rem;padding:.5rem .8rem;transition:all .5s ease-in-out}body main .contact .contact-form button:hover{transform:translate(3rem,0);transition:all .5s ease-in-out}body aside{background-color:#F3F3F3}body aside .facebook-feed{display:none}body footer{display:grid;grid-template-rows:repeat(3,auto);justify-content:center;background:#022460;background-image:url(../images/ZenBG-1.png),url(../images/ZenBG-2.png);background-repeat:repeat-x,repeat;color:#FFF;padding:2rem;text-align:center}body footer p{color:#FFF;line-height:1.5}body footer small{color:#F3F3F3;line-height:2}body footer .address{padding-bottom:.75rem}body footer .address a.phone{color:#FFF!important;font-family:'Noto Serif',serif;line-height:1.8}body footer .social{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.75rem}body footer .social a{color:#FFF;font-size:2rem}body footer .social a:hover{color:#8893A0}body footer .copy{padding-bottom:.75rem}body footer .copy small{font-size:.8rem}body footer .atd-credit{margin:0 auto}body footer .atd-credit .link-text{color:#8893A0;text-decoration:none}body footer .atd-credit a .link-logo{display:none}body footer .svg-inline--fa{display:inline-block;margin:.2rem .7rem;font-size:2rem}body footer .svg-inline--fa:hover{color:#8893A0;text-decoration:none}@media (min-width: 500px){body .hero{padding:4rem 0}body main .wrapper{padding:2rem}body main .wrapper .photo{max-width:70%;margin:0 auto}body main .services{padding:2rem}body main .services p{padding:1rem 0 3rem}body main .services h3{margin:0 1rem}body main .music{padding:2rem}body main .audio h3:first-of-type{padding-top:2rem}body main .audio audio:last-of-type{padding-bottom:2rem}body main .music-photo{max-width:70%;margin:4rem auto .3rem}body main .gallery{padding:2rem 0}body main .gallery h1{padding:0 1rem 1rem}body main .gallery .photos{grid-template-columns:repeat(2,1fr)}body main .contact-info{padding:2rem}body main .form-container{padding:1rem}body main .success,body main .four0four{padding:2rem}body .footer{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,auto);grid-template-areas:"address social" "copy copy" "atd atd"}body .footer .address{grid-area:address}body .footer .social{grid-area:social;align-items:center;justify-content:space-around}body .footer .copy{grid-area:copy}body .footer .atd-credit{grid-area:atd}}@media (min-width: 768px){body .hamburger-menu-wrapper{display:none}body .menu-list{background-color:#090909;display:flex;flex-direction:row;justify-content:space-around}body header.hero{background-image:url(../images/cascadia-landscape.jpg)}body header.hero .logo{margin:3.5rem 0 2.5rem}body main .wrapper{display:grid;grid-template-columns:66% 1fr;grid-template-areas:"intro intro" "text photo"}body main .wrapper .intro{grid-area:intro;padding:0 1rem 1.5rem}body main .wrapper .text{grid-area:text;padding:0 1rem}body main .wrapper .button{margin:2rem 7rem 0 1rem}body main .wrapper .photo{grid-area:photo;max-width:100%;padding:0 1rem}body main .wrapper .photo .main-photo{margin:0 auto}body main .services .descriptions{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;grid-gap:2rem}body main .services .descriptions h3{border-radius:12px 12px 0 0;margin:0}body main .services .descriptions .card{background-color:#FFF;border:3px solid #8893A0;border-radius:1rem}body main .services .descriptions .photo{padding:0}body main .services .descriptions .photo .main-photo{display:block;margin:0 auto .3rem}body main .services .descriptions .photo figcaption{display:block}body main .music-wrapper{display:grid;grid-template-columns:1fr 40%;grid-template-rows:auto 1fr;grid-template-areas:"music audio" "image audio";grid-gap:1rem}body main .music{grid-area:music}body main .audio{grid-area:audio;margin:-2rem -1rem}body main .music-photo{grid-area:image;margin:0 auto 0 2rem}body main .music-photo .main-photo{margin:0 auto .3rem}body main .gallery{padding:2rem 1rem}body main .gallery .photos{grid-gap:3rem}body main .contact{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:350px 475px;grid-template-areas:"info feed" "form feed"}body main .contact .contact-info{grid-area:info}body main .contact .form-container{grid-area:form}body main .contact .facebook-feed{grid-area:feed;display:flex;justify-content:center;padding:2rem 0 3rem;margin:0 auto}body main .success button,body main .four0four button{margin-top:2rem}body .footer{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,auto);grid-template-areas:"address social copy" "atd atd atd"}body .footer .address a.phone{text-decoration:none}body .footer .social{align-items:start;justify-content:space-around}body .footer .atd-credit{grid-area:atd}body .footer .atd-credit a:hover{color:#FFF}}@media (min-width: 900px){body .menu-list{justify-content:flex-end}body .menu-list a{padding-right:2.5rem}body header.hero .logo{height:12rem;width:12rem;padding:0}body main .wrapper{grid-template-rows:auto auto}body main .wrapper p{font-size:1.2rem}body main .wrapper .button{margin:2rem 0 0 1rem;max-width:33%}body main .services h1{padding:0 4rem}body main .services p{padding:1rem 4rem 3rem}body main .services .descriptions{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:2rem}body main .services .descriptions .photo{display:none}body main .gallery .photos{grid-template-columns:repeat(3,1fr)}}@media (min-width: 1200px){body .footer{grid-template-columns:repeat(4,1fr);grid-template-rows:auto;grid-template-areas:"address social copy atd"}body .footer .atd-credit{display:flex;flex-direction:column}body .footer .atd-credit .link-logo{display:block;margin:.7rem auto 0;height:2.5rem;width:auto}}
+/*
+File Name: palette.css
+Date: 9/5/18 - revised!
+Programmer: Mario Lopriore
+*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700');
+body {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a,
+body label,
+body small {
+  color: #000;
+  font-family: 'Signika', sans-serif;
+}
+body input,
+body textarea {
+  color: #090909;
+  font-family: 'Noto Serif', serif;
+}
+body p,
+body blockquote,
+body em,
+body figcaption {
+  color: #090909;
+  font-family: 'Noto Serif', serif;
+}
+body figcaption {
+  font-size: .8rem;
+  line-height: 1.3;
+  text-align: center;
+}
+body .hamburger-menu-wrapper {
+  background: #090909;
+  padding: 10px;
+  display: inline-block;
+}
+body .hamburger-menu {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  text-indent: -9999px;
+  z-index: 9999;
+  cursor: pointer;
+  background: transparent;
+}
+body .hamburger-menu:focus {
+  outline: none;
+}
+body .hamburger-menu span {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background: #02D5FD;
+}
+body .hamburger-menu span:before,
+body .hamburger-menu span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #02D5FD;
+  content: "";
+}
+body .hamburger-menu span:before {
+  top: -7px;
+}
+body .hamburger-menu span:after {
+  bottom: -7px;
+}
+body .hamburger-menu span:before,
+body .hamburger-menu span:after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+body .hamburger-menu span:before {
+  transition-property: top, transform;
+}
+body .hamburger-menu span::after {
+  transition-property: bottom, transform;
+}
+body .hamburger-menu.active span {
+  background: none;
+}
+body .hamburger-menu.active span:before {
+  top: 0;
+  transform: rotate(225deg);
+}
+body .hamburger-menu.active span:after {
+  bottom: 0;
+  transform: rotate(135deg);
+}
+body .hamburger-menu.active span:before,
+body .hamburger-menu.active span:after {
+  transition-delay: 0s, 0.3s;
+}
+body .menu {
+  background-color: #090909;
+  position: relative;
+  min-width: 220px;
+  text-align: center;
+}
+body .menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+}
+body .menu-list a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 25px 0;
+  transition: all 0.5s ease;
+}
+body .menu-list a:hover {
+  color: #02D5FD;
+}
+body .menu-overlay {
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1111;
+}
+body header.hero {
+  background-image: url(../images/cascadia-landscape-700.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+body header.hero .logo {
+  height: 10rem;
+  width: 10rem;
+  padding: 2.5rem 0;
+}
+body header.hero p {
+  font-family: 'Signika', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+body main {
+  background-color: #F3F3F3;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+body main h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+body main h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+body main h3 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+body main a.phone {
+  color: #095192;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+body main .intro {
+  padding-bottom: 1.5rem;
+}
+body main p {
+  color: #090909;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: .5rem 0 1rem;
+}
+body main button,
+body main .button {
+  padding: 1rem 0;
+  transform: translate(0, 0);
+  transition: all 0.5s ease-in-out;
+}
+body main button:hover,
+body main .button:hover {
+  transform: translate(0.5rem, 0);
+  transition: all 0.5s ease-in-out;
+}
+body main button a,
+body main .button a {
+  background-color: #095192;
+  border: 2px solid #022460;
+  box-shadow: 2px 2px 5px #090909;
+  border-radius: 1rem;
+  color: #FFF;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.3rem;
+  padding: .5rem .8rem;
+  text-decoration: none;
+}
+body main .photo {
+  font-size: .8rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+body main figcaption {
+  line-height: 1.3;
+}
+body main .main-photo {
+  border: 3px solid #8893A0;
+  border-radius: 1rem;
+  max-width: 100%;
+  margin: 2rem auto .3rem;
+}
+body main .services h3 {
+  background-image: linear-gradient(to bottom, #095192, #022460);
+  border-radius: 1rem;
+  color: #F3F3F3;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+body main .services p {
+  padding: 1rem 0 2rem;
+}
+body main .services .descriptions p {
+  padding: 1rem 1rem 2rem;
+}
+body main .services .descriptions .photo .main-photo {
+  display: none;
+}
+body main .services .descriptions .photo figcaption {
+  display: none;
+}
+body main .music {
+  padding-bottom: 2rem;
+}
+body main .audio {
+  background-image: linear-gradient(to bottom, #095192, #022460);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -1rem;
+}
+body main .audio h3 {
+  color: #FFF;
+  padding: 1rem;
+  text-align: center;
+}
+body main .audio audio {
+  margin: 0 auto 1rem;
+}
+body main .photos {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+body main .photos img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+body main .contact {
+  display: grid;
+}
+body main .contact .contact-info h3 {
+  padding-bottom: 1rem;
+}
+body main .contact .contact-info h4 {
+  color: #022460;
+  font-size: 1.3rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  text-decoration: none;
+}
+body main .contact .form-container {
+  margin: 0 1rem;
+}
+body main .contact .contact-form input,
+body main .contact .contact-form textarea {
+  margin: .3rem auto 1rem;
+  padding: .2rem;
+  width: calc(97%);
+}
+body main .contact .contact-form button {
+  background-color: #095192;
+  border: 2px solid #022460;
+  box-shadow: 2px 2px 5px #090909;
+  border-radius: 1rem;
+  color: #FFF;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.3rem;
+  padding: .5rem .8rem;
+  transition: all 0.5s ease-in-out;
+}
+body main .contact .contact-form button:hover {
+  transform: translate(3rem, 0);
+  transition: all 0.5s ease-in-out;
+}
+body aside {
+  background-color: #F3F3F3;
+}
+body aside .facebook-feed {
+  display: none;
+}
+body footer {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  background: #022460;
+  background-image: url("../images/ZenBG-1.png"), url("../images/ZenBG-2.png");
+  background-repeat: repeat-x, repeat;
+  color: #FFF;
+  padding: 2rem;
+  text-align: center;
+}
+body footer p {
+  color: #FFF;
+  line-height: 1.5;
+}
+body footer small {
+  color: #F3F3F3;
+  line-height: 2;
+}
+body footer .address {
+  padding-bottom: .75rem;
+}
+body footer .address a.phone {
+  color: #FFF !important;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+}
+body footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: .75rem;
+}
+body footer .social a {
+  color: #FFF;
+  font-size: 2rem;
+}
+body footer .social a:hover {
+  color: #8893A0;
+}
+body footer .social a .hide-title {
+  display: none;
+}
+body footer .copy {
+  padding-bottom: .75rem;
+}
+body footer .copy small {
+  font-size: .8rem;
+}
+body footer .atd-credit {
+  margin: 0 auto;
+}
+body footer .atd-credit .link-text {
+  color: #8893A0;
+  text-decoration: none;
+}
+body footer .atd-credit a .link-logo {
+  display: none;
+}
+body footer .svg-inline--fa {
+  display: inline-block;
+  margin: 0.2rem 0.7rem;
+  font-size: 2rem;
+}
+body footer .svg-inline--fa:hover {
+  color: #8893A0;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  body .hero {
+    padding: 4rem 0;
+  }
+  body main .wrapper {
+    padding: 2rem;
+  }
+  body main .wrapper .photo {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  body main .services {
+    padding: 2rem;
+  }
+  body main .services p {
+    padding: 1rem 0 3rem;
+  }
+  body main .services h3 {
+    margin: 0 1rem;
+  }
+  body main .music {
+    padding: 2rem;
+  }
+  body main .audio h3:first-of-type {
+    padding-top: 2rem;
+  }
+  body main .audio audio:last-of-type {
+    padding-bottom: 2rem;
+  }
+  body main .music-photo {
+    max-width: 70%;
+    margin: 4rem auto .3rem;
+  }
+  body main .gallery {
+    padding: 2rem 0;
+  }
+  body main .gallery h1 {
+    padding: 0 1rem 1rem;
+  }
+  body main .gallery .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .contact-info {
+    padding: 2rem;
+  }
+  body main .form-container {
+    padding: 1rem;
+  }
+  body main .success,
+  body main .four0four {
+    padding: 2rem;
+  }
+  body .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "address social" "copy copy" "atd atd";
+  }
+  body .footer .address {
+    grid-area: address;
+  }
+  body .footer .social {
+    grid-area: social;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .footer .copy {
+    grid-area: copy;
+  }
+  body .footer .atd-credit {
+    grid-area: atd;
+  }
+}
+@media (min-width: 768px) {
+  body .hamburger-menu-wrapper {
+    display: none;
+  }
+  body .menu-list {
+    background-color: #090909;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header.hero {
+    background-image: url('../images/cascadia-landscape.jpg');
+  }
+  body header.hero .logo {
+    margin: 3.5rem 0 2.5rem;
+  }
+  body main .wrapper {
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-template-areas: "intro intro" "text photo";
+  }
+  body main .wrapper .intro {
+    grid-area: intro;
+    padding: 0 1rem 1.5rem;
+  }
+  body main .wrapper .text {
+    grid-area: text;
+    padding: 0 1rem;
+  }
+  body main .wrapper .button {
+    margin: 2rem 7rem 0 1rem;
+  }
+  body main .wrapper .photo {
+    grid-area: photo;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  body main .wrapper .photo .main-photo {
+    margin: 0 auto;
+  }
+  body main .services .descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+  }
+  body main .services .descriptions h3 {
+    border-radius: 12px 12px 0 0;
+    margin: 0;
+  }
+  body main .services .descriptions .card {
+    background-color: #FFF;
+    border: 3px solid #8893A0;
+    border-radius: 1rem;
+  }
+  body main .services .descriptions .photo {
+    padding: 0;
+  }
+  body main .services .descriptions .photo .main-photo {
+    display: block;
+    margin: 0 auto .3rem;
+  }
+  body main .services .descriptions .photo figcaption {
+    display: block;
+  }
+  body main .music-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "music audio" "image audio";
+    grid-gap: 1rem;
+  }
+  body main .music {
+    grid-area: music;
+  }
+  body main .audio {
+    grid-area: audio;
+    margin: -2rem -1rem;
+  }
+  body main .music-photo {
+    grid-area: image;
+    margin: 0 auto 0 2rem;
+  }
+  body main .music-photo .main-photo {
+    margin: 0 auto .3rem;
+  }
+  body main .gallery {
+    padding: 2rem 1rem;
+  }
+  body main .gallery .photos {
+    grid-gap: 3rem;
+  }
+  body main .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 475px;
+    grid-template-areas: "info feed" "form feed";
+  }
+  body main .contact .contact-info {
+    grid-area: info;
+  }
+  body main .contact .form-container {
+    grid-area: form;
+  }
+  body main .contact .facebook-feed {
+    grid-area: feed;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+    margin: 0 auto;
+  }
+  body main .success button,
+  body main .four0four button {
+    margin-top: 2rem;
+  }
+  body .footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "address social copy" "atd atd atd";
+  }
+  body .footer .address a.phone {
+    text-decoration: none;
+  }
+  body .footer .social {
+    align-items: start;
+    justify-content: space-around;
+  }
+  body .footer .atd-credit {
+    grid-area: atd;
+  }
+  body .footer .atd-credit a:hover {
+    color: #FFF;
+  }
+}
+@media (min-width: 900px) {
+  body .menu-list {
+    justify-content: flex-end;
+  }
+  body .menu-list a {
+    padding-right: 2.5rem;
+  }
+  body header.hero .logo {
+    height: 12rem;
+    width: 12rem;
+    padding: 0;
+  }
+  body main .wrapper {
+    grid-template-rows: auto auto;
+  }
+  body main .wrapper p {
+    font-size: 1.2rem;
+  }
+  body main .wrapper .button {
+    margin: 2rem 0 0 1rem;
+    max-width: 33%;
+  }
+  body main .services h1 {
+    padding: 0 4rem;
+  }
+  body main .services p {
+    padding: 1rem 4rem 3rem;
+  }
+  body main .services .descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  body main .services .descriptions .photo {
+    display: none;
+  }
+  body main .gallery .photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  body .footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "address social copy atd";
+  }
+  body .footer .atd-credit {
+    display: flex;
+    flex-direction: column;
+  }
+  body .footer .atd-credit .link-logo {
+    display: block;
+    margin: .7rem auto 0;
+    height: 2.5rem;
+    width: auto;
+  }
+}

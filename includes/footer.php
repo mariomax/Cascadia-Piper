@@ -30,10 +30,10 @@
 		</script>
 		
 		<!-- Instagram icon -->
-		<a href="https://www.instagram.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="instagram feed"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.instagram.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="instagram feed"><i class="fab fa-instagram"></i><span class="hide-title">Instagram link</span></a>
 
 		<!-- Facebook icon -->
-		<a href="https://www.facebook.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="facebook page"><i class="fab fa-facebook-square"></i></a>
+		<a href="https://www.facebook.com/cascadiapiper/" target="_blank" rel="nofollow noopener" title="facebook page"><i class="fab fa-facebook-square"></i><span class="hide-title">Facebook link</span></a>
 	</div>
 
 	<div class="copy">	

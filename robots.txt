@@ -1,4 +1,4 @@
-https://www.cascadiapiper.com/robots.txt
+Sitemap: https://cascadiapiper.com/sitemap.xml
 User-agent: *
 Allow: /
 
