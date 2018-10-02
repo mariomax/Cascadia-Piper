@@ -6,6 +6,10 @@
 		Portland, OR 97293</p>
 	</div>
 
+	<div class="g-map">
+	<iframe width="320" height="125" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2aHPZbyglVQRcUIPQzfmwZU&key=AIzaSyApG6KbUAnfLSIXMScNLXz0GgVe7KQAQW8" allowfullscreen></iframe>
+	</div>
+
 	<div class="social">
 		<!-- Encrypted email icon -->
 		<script type="text/javascript">
@@ -42,8 +46,8 @@
 	</div>	
 
 	<div class="atd-credit">
+		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-icon.svg" alt="Anchor Tag Design's logo" title="Anchor Tag Design" class="link-logo"></a>
 		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design" class="link-text">Website by Anchor Tag Design</a>
-		<a href="https://www.anchortagdesign.com/" target="_blank" rel="nofollow noopener" title="Anchor Tag Design"><img src="images/atd-icon.png" alt="Anchor Tag Design's logo" title="Anchor Tag Design" class="link-logo"></a>
 	</div>
 
 </footer>

@@ -20,6 +20,7 @@ body {
   textarea {
     color: @dark;
     font-family: 'Noto Serif', serif;
+    font-size: 1rem;
   }
   p,
   blockquote,
@@ -348,6 +349,8 @@ body {
     text-align: center;
     p {
       color: @white;
+      font-family: 'Signika', san-serif;
+      font-size: 1.2rem;
       line-height: 1.5;
     }
     small {
@@ -358,7 +361,8 @@ body {
       padding-bottom: .75rem;
       a.phone {
         color: @white  !important;
-        font-family: 'Noto Serif', serif;
+        font-family: 'Signika', san-serif;
+        font-size: 1.2rem;
         line-height: 1.8;
       }
     }
@@ -366,10 +370,10 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: .75rem;
+      padding: 1rem 0;
       a {
         color: @white;
-        font-size: 2rem;
+        font-size: 2.5rem;
         &:hover {
           color: @mid;
         }
@@ -467,16 +471,21 @@ body {
     } // Footer
     .footer {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "address social" "copy copy" "atd atd";
+      grid-template-columns: 1fr 13rem;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "address social" "map map" "copy copy" "atd atd";
       .address {
         grid-area: address;
+      }
+      .g-map {
+        grid-area: map;
+        padding: .5rem 0 1rem;
       }
       .social {
         grid-area: social;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0;
       }
       .copy {
         grid-area: copy;
@@ -613,22 +622,41 @@ body {
       }
     } // Footer
     .footer {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 7rem auto 1fr;
       grid-template-rows: repeat(2, auto);
-      grid-template-areas: "address social copy" "atd atd atd";
+      grid-template-areas: "social address map" "social copy atd";
+      align-items: center;
       .address {
         a.phone {
           text-decoration: none;
         }
       }
       .social {
-        align-items: start;
+        flex-direction: column;
         justify-content: space-around;
+        a {
+          padding-top: 1.2rem;
+        }
+        a:first-of-type {
+          padding-top: 0;
+        }
       }
       .atd-credit {
         grid-area: atd;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 3rem;
         a:hover {
           color: @white;
+        }
+        a {
+          .link-logo {
+            display: inline-block;
+            height: 2rem;
+            width: auto;
+          }
         }
       }
     }
@@ -665,7 +693,10 @@ body {
       } // Services
       .services {
         h1 {
-          padding: 0 4rem;
+          padding: 0 4rem 1rem;
+        }
+        h2 {
+          padding: 0 4rem 1rem;
         }
         p {
           padding: 1rem 4rem 3rem;
@@ -684,25 +715,31 @@ body {
           grid-template-columns: repeat(3, 1fr);
         }
       }
+    } // Footer
+    .footer {
+      grid-template-columns: 10rem auto 1fr;
+      .atd-credit {
+        margin: 0 5rem;
+      }
     }
-  }
+  } 
 }
 
 @media (min-width: 1200px) {
   body {
     .footer {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "address social copy atd";
-      .atd-credit {
-        display: flex;
-        flex-direction: column;
-        .link-logo {
-          display: block;
-          margin: .7rem auto 0;
-          height: 2.5rem;
-          width: auto;
+      grid-template-columns: 20rem 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: "social address map" "atd copy map";
+      justify-content: space-around;
+      .social {
+        flex-direction: row;
+        a {
+          padding-top: 0;
         }
+      }
+      .atd-credit {
+        margin: 0 1rem;
       }
     }
   }

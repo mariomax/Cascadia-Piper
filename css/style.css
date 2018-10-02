@@ -25,6 +25,7 @@ body input,
 body textarea {
   color: #090909;
   font-family: 'Noto Serif', serif;
+  font-size: 1rem;
 }
 body p,
 body blockquote,
@@ -344,6 +345,8 @@ body footer {
 }
 body footer p {
   color: #FFF;
+  font-family: 'Signika', san-serif;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 body footer small {
@@ -355,18 +358,19 @@ body footer .address {
 }
 body footer .address a.phone {
   color: #FFF !important;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Signika', san-serif;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 body footer .social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: .75rem;
+  padding: 1rem 0;
 }
 body footer .social a {
   color: #FFF;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 body footer .social a:hover {
   color: #8893A0;
@@ -453,17 +457,22 @@ body footer .svg-inline--fa:hover {
   }
   body .footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "address social" "copy copy" "atd atd";
+    grid-template-columns: 1fr 13rem;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "address social" "map map" "copy copy" "atd atd";
   }
   body .footer .address {
     grid-area: address;
   }
+  body .footer .g-map {
+    grid-area: map;
+    padding: .5rem 0 1rem;
+  }
   body .footer .social {
     grid-area: social;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
   }
   body .footer .copy {
     grid-area: copy;
@@ -588,22 +597,39 @@ body footer .svg-inline--fa:hover {
     margin-top: 2rem;
   }
   body .footer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 7rem auto 1fr;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "address social copy" "atd atd atd";
+    grid-template-areas: "social address map" "social copy atd";
+    align-items: center;
   }
   body .footer .address a.phone {
     text-decoration: none;
   }
   body .footer .social {
-    align-items: start;
+    flex-direction: column;
     justify-content: space-around;
+  }
+  body .footer .social a {
+    padding-top: 1.2rem;
+  }
+  body .footer .social a:first-of-type {
+    padding-top: 0;
   }
   body .footer .atd-credit {
     grid-area: atd;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 3rem;
   }
   body .footer .atd-credit a:hover {
     color: #FFF;
+  }
+  body .footer .atd-credit a .link-logo {
+    display: inline-block;
+    height: 2rem;
+    width: auto;
   }
 }
 @media (min-width: 900px) {
@@ -629,7 +655,10 @@ body footer .svg-inline--fa:hover {
     max-width: 33%;
   }
   body main .services h1 {
-    padding: 0 4rem;
+    padding: 0 4rem 1rem;
+  }
+  body main .services h2 {
+    padding: 0 4rem 1rem;
   }
   body main .services p {
     padding: 1rem 4rem 3rem;
@@ -645,21 +674,27 @@ body footer .svg-inline--fa:hover {
   body main .gallery .photos {
     grid-template-columns: repeat(3, 1fr);
   }
+  body .footer {
+    grid-template-columns: 10rem auto 1fr;
+  }
+  body .footer .atd-credit {
+    margin: 0 5rem;
+  }
 }
 @media (min-width: 1200px) {
   body .footer {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "address social copy atd";
+    grid-template-columns: 20rem 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "social address map" "atd copy map";
+    justify-content: space-around;
+  }
+  body .footer .social {
+    flex-direction: row;
+  }
+  body .footer .social a {
+    padding-top: 0;
   }
   body .footer .atd-credit {
-    display: flex;
-    flex-direction: column;
-  }
-  body .footer .atd-credit .link-logo {
-    display: block;
-    margin: .7rem auto 0;
-    height: 2.5rem;
-    width: auto;
+    margin: 0 1rem;
   }
 }

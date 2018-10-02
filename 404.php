@@ -7,7 +7,7 @@
     <meta name="author" content="Cascadia Piper | John Goff" />
     <meta name="description" content="Cascadia Piper bagpipe services include: parties, weddings, funerals, wakes, and other special events. Bagpipes provide a traditional, respectful, and honorable way to cherish past loved ones and welcome new special family and friends. (503) 960-5599" />
     <meta name="keywords" content="portland bagpiper, portland bagpipe player, bagpipes in portland oregon, bagpipes in vancouver washington, portland bagpipes, bagpipes" />
-    <meta name="thumbnail" content="https://cascadiapiper.com/images/cascadia_1x1.png" />
+    <meta name="thumbnail" content="https://cascadiapiper.com/images/cascadia-piper-logo.png" />
     <link rel="canonical" href="https://cascadiapiper.com/index.php" />
 
     <title>Cascadia Piper</title>
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="John Goff: The Cascadia Piper" />
     <meta property="og:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta property="og:image" content="https://cascadiapiper.com/OG-markup.jpg" />
+    <meta property="og:image" content="https://cascadiapiper.com/images/OG-markup.jpg" />
     <meta property="fb:app_id" content="2131529450393664" />
 
     <!-- Twitter Card markup -->
@@ -25,7 +25,7 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="Cascadia Piper | Bagpiper in Portland Oregon" />
     <meta name="twitter:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta name="twitter:image" content="https://cascadiapiper.com/OG-markup.jpg" />
+    <meta name="twitter:image" content="https://cascadiapiper.com/images/OG-markup.jpg" />
 
     <!-- Stylesheets in the css folder -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
