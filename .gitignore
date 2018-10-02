@@ -6,3 +6,6 @@ phpmailer/**
 
 # Stashed files:js and style for float/lock nav bar
 stashed-files/**
+
+# API key for Google Maps in the footer
+includes/footer.php
