@@ -457,7 +457,7 @@ body footer .svg-inline--fa:hover {
   }
   body .footer {
     display: grid;
-    grid-template-columns: 1fr 13rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "address social" "map map" "copy copy" "atd atd";
   }
@@ -471,7 +471,7 @@ body footer .svg-inline--fa:hover {
   body .footer .social {
     grid-area: social;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
   }
   body .footer .copy {
@@ -621,7 +621,8 @@ body footer .svg-inline--fa:hover {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 3rem;
+    margin: 0 auto;
+    max-width: 325px;
   }
   body .footer .atd-credit a:hover {
     color: #FFF;
@@ -630,6 +631,7 @@ body footer .svg-inline--fa:hover {
     display: inline-block;
     height: 2rem;
     width: auto;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 900px) {
@@ -676,9 +678,6 @@ body footer .svg-inline--fa:hover {
   }
   body .footer {
     grid-template-columns: 10rem auto 1fr;
-  }
-  body .footer .atd-credit {
-    margin: 0 5rem;
   }
 }
 @media (min-width: 1200px) {

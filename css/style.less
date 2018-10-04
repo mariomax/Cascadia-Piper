@@ -471,7 +471,7 @@ body {
     } // Footer
     .footer {
       display: grid;
-      grid-template-columns: 1fr 13rem;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, auto);
       grid-template-areas: "address social" "map map" "copy copy" "atd atd";
       .address {
@@ -484,7 +484,7 @@ body {
       .social {
         grid-area: social;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0;
       }
       .copy {
@@ -647,7 +647,8 @@ body {
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        margin: 0 3rem;
+        margin: 0 auto;
+        max-width: 325px;
         a:hover {
           color: @white;
         }
@@ -656,6 +657,7 @@ body {
             display: inline-block;
             height: 2rem;
             width: auto;
+            padding-right: 1rem;
           }
         }
       }
@@ -718,9 +720,6 @@ body {
     } // Footer
     .footer {
       grid-template-columns: 10rem auto 1fr;
-      .atd-credit {
-        margin: 0 5rem;
-      }
     }
   } 
 }
