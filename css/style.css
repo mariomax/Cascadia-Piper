@@ -89,29 +89,40 @@ body .hamburger-menu span:after {
 }
 body .hamburger-menu span:before,
 body .hamburger-menu span:after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
 }
 body .hamburger-menu span:before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
   transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
 }
 body .hamburger-menu span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
 }
 body .hamburger-menu.active span {
   background: none;
 }
 body .hamburger-menu.active span:before {
   top: 0;
-  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 body .hamburger-menu.active span:after {
   bottom: 0;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 body .hamburger-menu.active span:before,
 body .hamburger-menu.active span:after {
-  transition-delay: 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s;
 }
 body .menu {
   background-color: #090909;
@@ -133,12 +144,14 @@ body .menu-list a {
   font-size: 18px;
   display: inline-block;
   margin: 25px 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 body .menu-list a:hover {
   color: #02D5FD;
 }
 body .menu-overlay {
+  -webkit-transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   display: none;
   position: absolute;
@@ -152,10 +165,19 @@ body .menu-overlay {
 body header.hero {
   background-image: url(../images/cascadia-landscape-700.jpg);
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: auto;
 }
@@ -206,19 +228,24 @@ body main p {
 body main button,
 body main .button {
   padding: 1rem 0;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 body main button:hover,
 body main .button:hover {
-  transform: translate(0.5rem, 0);
+  -webkit-transform: translate(0.5rem, 0);
+          transform: translate(0.5rem, 0);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 body main button a,
 body main .button a {
   background-color: #095192;
   border: 2px solid #022460;
-  box-shadow: 2px 2px 5px #090909;
+  -webkit-box-shadow: 2px 2px 5px #090909;
+          box-shadow: 2px 2px 5px #090909;
   border-radius: 1rem;
   color: #FFF;
   font-family: 'Signika', sans-serif;
@@ -241,6 +268,7 @@ body main .main-photo {
   margin: 2rem auto .3rem;
 }
 body main .services h3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#095192), to(#022460));
   background-image: linear-gradient(to bottom, #095192, #022460);
   border-radius: 1rem;
   color: #F3F3F3;
@@ -264,10 +292,18 @@ body main .music {
   padding-bottom: 2rem;
 }
 body main .audio {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#095192), to(#022460));
   background-image: linear-gradient(to bottom, #095192, #022460);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -1rem;
 }
 body main .audio h3 {
@@ -314,16 +350,20 @@ body main .contact .contact-form textarea {
 body main .contact .contact-form button {
   background-color: #095192;
   border: 2px solid #022460;
-  box-shadow: 2px 2px 5px #090909;
+  -webkit-box-shadow: 2px 2px 5px #090909;
+          box-shadow: 2px 2px 5px #090909;
   border-radius: 1rem;
   color: #FFF;
   font-family: 'Signika', sans-serif;
   font-size: 1.3rem;
   padding: .5rem .8rem;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 body main .contact .contact-form button:hover {
-  transform: translate(3rem, 0);
+  -webkit-transform: translate(3rem, 0);
+          transform: translate(3rem, 0);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 body aside {
@@ -335,7 +375,9 @@ body aside .facebook-feed {
 body footer {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #022460;
   background-image: url("../images/ZenBG-1.png"), url("../images/ZenBG-2.png");
   background-repeat: repeat-x, repeat;
@@ -363,9 +405,16 @@ body footer .address a.phone {
   line-height: 1.8;
 }
 body footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem 0;
 }
 body footer .social a {
@@ -470,8 +519,11 @@ body footer .svg-inline--fa:hover {
   }
   body .footer .social {
     grid-area: social;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0;
   }
   body .footer .copy {
@@ -487,9 +539,15 @@ body footer .svg-inline--fa:hover {
   }
   body .menu-list {
     background-color: #090909;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body header.hero {
     background-image: url('../images/cascadia-landscape.jpg');
@@ -587,8 +645,12 @@ body footer .svg-inline--fa:hover {
   }
   body main .contact .facebook-feed {
     grid-area: feed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 2rem 0 3rem;
     margin: 0 auto;
   }
@@ -600,14 +662,20 @@ body footer .svg-inline--fa:hover {
     grid-template-columns: 7rem auto 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "social address map" "social copy atd";
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .footer .address a.phone {
     text-decoration: none;
   }
   body .footer .social {
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .footer .social a {
     padding-top: 1.2rem;
@@ -617,10 +685,18 @@ body footer .svg-inline--fa:hover {
   }
   body .footer .atd-credit {
     grid-area: atd;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 auto;
     max-width: 325px;
   }
@@ -636,14 +712,16 @@ body footer .svg-inline--fa:hover {
 }
 @media (min-width: 900px) {
   body .menu-list {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   body .menu-list a {
     padding-right: 2.5rem;
   }
   body header.hero .logo {
-    height: 12rem;
-    width: 12rem;
+    height: 13rem;
+    width: 13rem;
     padding: 0;
   }
   body main .wrapper {
@@ -685,10 +763,14 @@ body footer .svg-inline--fa:hover {
     grid-template-columns: 20rem 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "social address map" "atd copy map";
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .footer .social {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body .footer .social a {
     padding-top: 0;
