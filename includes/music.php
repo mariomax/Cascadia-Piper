@@ -10,22 +10,22 @@
     <meta name="thumbnail" content="https://cascadiapiper.com/images/cascadia-piper-logo.png" />
     <link rel="canonical" href="https://cascadiapiper.com/index.php" />
 
-    <title>Cascadia Piper</title>
+    <title>Bagpipe music by the Cascadia Piper</title>
     
     <!-- Facebook Open Graph markup -->
     <meta property="og:url" content="https://cascadiapiper.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="John Goff: The Cascadia Piper" />
-    <meta property="og:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta property="og:image" content="https://cascadiapiper.com/images/OG-markup.jpg" />
+    <meta property="og:description" content="John Goff, the Cascadia Piper is an award winning bagpiper in Portland Oregon. He plays babpipes for parties, weddings, and funerals." />
+    <meta property="og:image" content="https://cascadiapiper.com/images/og-image.jpg" />
     <meta property="fb:app_id" content="2131529450393664" />
 
     <!-- Twitter Card markup -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="Cascadia Piper | Bagpiper in Portland Oregon" />
-    <meta name="twitter:description" content="Award winning bagpiper in Portland Oregon. John Goff, the Cascadia Piper plays babpipes for parties, weddings, funerals, wakes, and special occasions." />
-    <meta name="twitter:image" content="https://cascadiapiper.com/images/OG-markup.jpg" />
+    <meta name="twitter:description" content="John Goff, the Cascadia Piper is an award winning bagpiper in Portland Oregon. He plays babpipes for parties, weddings, and funerals." />
+    <meta name="twitter:image" content="https://cascadiapiper.com/images/og-image.jpg" />
 
     <!-- Stylesheets in the css folder -->
     <link href="../css/reset.css" rel="stylesheet" type="text/css">

@@ -9,3 +9,6 @@ stashed-files/**
 
 # API key for Google Maps in the footer
 includes/footer.php
+
+# Don't track .htaccess
+.htaccess
