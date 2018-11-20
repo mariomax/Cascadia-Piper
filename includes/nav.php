@@ -9,6 +9,7 @@
     <a href="includes/services.php">Services</a><br>
     <a href="includes/music.php">Music</a><br>
     <a href="includes/photos.php">Photos</a><br>
+    <a href="includes/merch.php">Merch</a><br>
     <a href="contact/contact.php">Contact</a>
   </nav>
 </div>
