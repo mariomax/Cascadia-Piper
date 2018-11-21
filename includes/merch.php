@@ -73,85 +73,91 @@
 
         <section class="shirts">
           <!-- "Piper face shirt" -->
-          <figure>
-            <img src="../images/shirt-back-1.png" alt="Cascadia Piper tee shirt">
-            <figcaption>Bagpiping from the Northwest</figcaption>
-          </figure>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="R49VGPHH2EAJC">
-            <table>
-              <tr><td><input type="hidden" name="on0" value="Gender">Gender</td></tr><tr><td><select name="os0">
-                <option value="Women">Women $15.00 USD</option>
-                <option value="Men">Men $15.00 USD</option>
-              </select> </td></tr>
-              <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
-                <option value="Small">Small </option>
-                <option value="Medium">Medium </option>
-                <option value="Large">Large </option>
-                <option value="X-Large">X-Large </option>
-                <option value="2XL">2XL </option>
-                <option value="3XL">3XL </option>
-              </select> </td></tr>
+          <div>
+            <figure>
+              <img src="../images/shirt-back-1.png" alt="Cascadia Piper tee shirt">
+              <figcaption>Bagpiping from the Northwest</figcaption>
+            </figure>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="R49VGPHH2EAJC">
+              <table>
+                <tr><td><input type="hidden" name="on0" value="Gender">Gender:</td></tr><tr><td><select name="os0">
+                  <option value="Women">Women $15.00 USD</option>
+                  <option value="Men">Men $15.00 USD</option>
+                </select> </td></tr>
+                <tr><td><input type="hidden" name="on1" value="Sizes">Sizes:</td></tr><tr><td><select name="os1">
+                  <option value="Small">Small </option>
+                  <option value="Medium">Medium </option>
+                  <option value="Large">Large </option>
+                  <option value="X-Large">X-Large </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select> </td></tr>
+                </table>
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" class="add" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
+
+          <!-- "Text shirt" -->
+          <div>
+            <figure>
+              <img src="../images/shirt-back-2.png" alt="Cascadia Piper tee shirt">
+              <figcaption>Loud Pipes Save Lives</figcaption>
+            </figure>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="QHSRLCXZQ8GXN">
+              <table>
+                <tr><td><input type="hidden" name="on0" value="Gender">Gender:</td></tr><tr><td><select name="os0">
+                  <option value="Women">Women $15.00 USD</option>
+                  <option value="Men">Men $15.00 USD</option>
+                </select> </td></tr>
+                <tr><td><input type="hidden" name="on1" value="Sizes">Sizes:</td></tr><tr><td><select name="os1">
+                  <option value="Small">Small </option>
+                  <option value="Medium">Medium </option>
+                  <option value="Large">Large </option>
+                  <option value="X-Large">X-Large </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select> </td></tr>
               </table>
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-
-          <!-- "Text shirt" --> 
-          <figure>
-            <img src="../images/shirt-back-2.png" alt="Cascadia Piper tee shirt">
-            <figcaption>Loud Pipes Save Lives</figcaption>
-          </figure>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="QHSRLCXZQ8GXN">
-            <table>
-              <tr><td><input type="hidden" name="on0" value="Gender">Gender</td></tr><tr><td><select name="os0">
-                <option value="Women">Women $15.00 USD</option>
-                <option value="Men">Men $15.00 USD</option>
-              </select> </td></tr>
-              <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
-                <option value="Small">Small </option>
-                <option value="Medium">Medium </option>
-                <option value="Large">Large </option>
-                <option value="X-Large">X-Large </option>
-                <option value="2XL">2XL </option>
-                <option value="3XL">3XL </option>
-              </select> </td></tr>
-            </table>
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" class="add" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div> 
+          
           <!-- "Bagpipe shape shirt" --> 
-          <figure>
-            <img src="../images/shirt-back-3.png" alt="Cascadia Piper tee shirt">
-            <figcaption>Bagpipe &amp; Tagline</figcaption>
-          </figure>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="PG3XWQSMBJ8KU">
-            <table>
-              <tr><td><input type="hidden" name="on0" value="Gender">Gender</td></tr><tr><td><select name="os0">
-                <option value="Women">Women $15.00 USD</option>
-                <option value="Men">Men $15.00 USD</option>
-              </select> </td></tr>
-              <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
-                <option value="Small">Small </option>
-                <option value="Medium">Medium </option>
-                <option value="Large">Large </option>
-                <option value="X-Large">X-Large </option>
-                <option value="2XL">2XL </option>
-                <option value="3XL">3XL </option>
-              </select> </td></tr>
-            </table>
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
+          <div>
+            <figure>
+              <img src="../images/shirt-back-3.png" alt="Cascadia Piper tee shirt">
+              <figcaption>Bagpipe &amp; Tagline</figcaption>
+            </figure>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="PG3XWQSMBJ8KU">
+              <table>
+                <tr><td><input type="hidden" name="on0" value="Gender">Gender:</td></tr><tr><td><select name="os0">
+                  <option value="Women">Women $15.00 USD</option>
+                  <option value="Men">Men $15.00 USD</option>
+                </select> </td></tr>
+                <tr><td><input type="hidden" name="on1" value="Sizes">Sizes:</td></tr><tr><td><select name="os1">
+                  <option value="Small">Small </option>
+                  <option value="Medium">Medium </option>
+                  <option value="Large">Large </option>
+                  <option value="X-Large">X-Large </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" class="add" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
         </section>
       </section>      
     </main>

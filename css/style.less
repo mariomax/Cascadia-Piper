@@ -12,7 +12,8 @@ body {
   h6,
   a,
   label,
-  small {
+  small,
+  select {
     color: @black;
     font-family: 'Signika', sans-serif;
   }
@@ -310,12 +311,31 @@ body {
         }
       }
       .shirts {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         justify-content: center;
         text-align: center;
-        img {
-          max-width: 200px;
+        padding-top: 2rem;
+        figure {
+          img {
+            margin-bottom: .5rem;
+            max-width: 300px;
+          }
+        }
+        form {
+          font-family: 'Signika', sans-serif;
+          padding: 1rem 0 3rem;
+          td {
+            padding: .5rem 2rem;
+            text-align: left;
+            select {
+              border-radius: 3px;
+              border-color: @light;
+              background-color: @white;
+            }
+          }
+          input.add {
+            padding-top: 1rem;
+          } 
         }
       }
     } // Contact
@@ -624,7 +644,7 @@ body {
         .photos {
           grid-gap: 3rem;
         }
-      } //Merch
+      } // Merch
       .shopping {
         padding: 2rem 2rem;
         .shop-open {
@@ -650,12 +670,14 @@ body {
           }
         }
         .shirts {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 2rem;
           justify-content: center;
           figure {
             align-self: end;
             img {
               padding-bottom: 1rem;
+              max-width: 220px;
             }
           }
         }
@@ -792,9 +814,6 @@ body {
       } //Merch
       .shopping {
         padding: 2rem 4rem;
-        .shop-open {
-
-        }
       }
     } // Footer
     .footer {

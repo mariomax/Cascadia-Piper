@@ -17,7 +17,8 @@ body h5,
 body h6,
 body a,
 body label,
-body small {
+body small,
+body select {
   color: #000;
   font-family: 'Signika', sans-serif;
 }
@@ -307,13 +308,30 @@ body main .shopping .shop-open figure img {
   max-width: 200px;
 }
 body main .shopping .shirts {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   text-align: center;
+  padding-top: 2rem;
 }
-body main .shopping .shirts img {
-  max-width: 200px;
+body main .shopping .shirts figure img {
+  margin-bottom: .5rem;
+  max-width: 300px;
+}
+body main .shopping .shirts form {
+  font-family: 'Signika', sans-serif;
+  padding: 1rem 0 3rem;
+}
+body main .shopping .shirts form td {
+  padding: .5rem 2rem;
+  text-align: left;
+}
+body main .shopping .shirts form td select {
+  border-radius: 3px;
+  border-color: #F3F3F3;
+  background-color: #FFF;
+}
+body main .shopping .shirts form input.add {
+  padding-top: 1rem;
 }
 body main .contact {
   display: grid;
@@ -623,7 +641,8 @@ body footer .svg-inline--fa:hover {
     max-width: 150px;
   }
   body main .shopping .shirts {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
     justify-content: center;
   }
   body main .shopping .shirts figure {
@@ -631,6 +650,7 @@ body footer .svg-inline--fa:hover {
   }
   body main .shopping .shirts figure img {
     padding-bottom: 1rem;
+    max-width: 220px;
   }
   body main .shopping .check-out {
     display: flex;
