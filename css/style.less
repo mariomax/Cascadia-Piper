@@ -292,33 +292,28 @@ body {
       }
     } // Merch
     .shopping {
-      h5 {
-        color: @mid;
-        font-weight: 800;
-        text-align: center;
-        padding: 2rem 0 0;
-      }
-      .t-description,
-      .shirts {
+      .shop-open  {
         display: grid;
         justify-content: center;
-        img {
-          margin: 2rem auto .5rem;
-          max-width: 300px;
-        }
-        img.logo {
-          max-width: 200px;
+        p {
+          padding: .5rem 0;
         }
         a {
           font-family: 'Noto Serif', serif;
         }
+        figure {
+          margin: 0 auto .5rem;
+          img {
+            margin: 2rem auto .5rem;
+            max-width: 200px;
+          }
+        }
       }
       .shirts {
-        text-align: center;
-      }
-      .check-out {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
         img {
           max-width: 200px;
         }
@@ -629,15 +624,37 @@ body {
         .photos {
           grid-gap: 3rem;
         }
-      } 
+      } //Merch
       .shopping {
         padding: 2rem 2rem;
+        .shop-open {
+          display: grid;
+          grid-template-columns: 1fr 10rem;
+          grid-template-rows: auto 1fr;
+          grid-column-gap: 2rem;
+          grid-template-areas:
+            "headline headline"
+            "paragraph figure";
+          h3 {
+            grid-area: headline;
+          }
+          .shop-para {
+            grid-area: paragraph;
+          }
+          figure {
+            grid-area: figure;
+            img {
+              margin: 0 auto .8rem;
+              max-width: 150px;
+            }
+          }
+        }
         .shirts {
           grid-template-columns: repeat(2, 1fr);
           justify-content: center;
           figure {
             align-self: end;
-            img.logo {
+            img {
               padding-bottom: 1rem;
             }
           }
@@ -771,6 +788,12 @@ body {
       .gallery {
         .photos {
           grid-template-columns: repeat(3, 1fr);
+        }
+      } //Merch
+      .shopping {
+        padding: 2rem 4rem;
+        .shop-open {
+
         }
       }
     } // Footer

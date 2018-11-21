@@ -289,38 +289,30 @@ body main .photos img {
   border-radius: 1rem;
   max-width: 100%;
 }
-body main .shopping h5 {
-  color: #8893A0;
-  font-weight: 800;
-  text-align: center;
-  padding: 2rem 0 0;
-}
-body main .shopping .t-description,
-body main .shopping .shirts {
+body main .shopping .shop-open {
   display: grid;
   justify-content: center;
 }
-body main .shopping .t-description img,
-body main .shopping .shirts img {
-  margin: 2rem auto .5rem;
-  max-width: 300px;
+body main .shopping .shop-open p {
+  padding: .5rem 0;
 }
-body main .shopping .t-description img.logo,
-body main .shopping .shirts img.logo {
-  max-width: 200px;
-}
-body main .shopping .t-description a,
-body main .shopping .shirts a {
+body main .shopping .shop-open a {
   font-family: 'Noto Serif', serif;
 }
+body main .shopping .shop-open figure {
+  margin: 0 auto .5rem;
+}
+body main .shopping .shop-open figure img {
+  margin: 2rem auto .5rem;
+  max-width: 200px;
+}
 body main .shopping .shirts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-body main .shopping .check-out {
-  display: flex;
-  justify-content: center;
-}
-body main .shopping .check-out img {
+body main .shopping .shirts img {
   max-width: 200px;
 }
 body main .contact {
@@ -610,6 +602,26 @@ body footer .svg-inline--fa:hover {
   body main .shopping {
     padding: 2rem 2rem;
   }
+  body main .shopping .shop-open {
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: "headline headline" "paragraph figure";
+  }
+  body main .shopping .shop-open h3 {
+    grid-area: headline;
+  }
+  body main .shopping .shop-open .shop-para {
+    grid-area: paragraph;
+  }
+  body main .shopping .shop-open figure {
+    grid-area: figure;
+  }
+  body main .shopping .shop-open figure img {
+    margin: 0 auto .8rem;
+    max-width: 150px;
+  }
   body main .shopping .shirts {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -617,7 +629,7 @@ body footer .svg-inline--fa:hover {
   body main .shopping .shirts figure {
     align-self: end;
   }
-  body main .shopping .shirts figure img.logo {
+  body main .shopping .shirts figure img {
     padding-bottom: 1rem;
   }
   body main .shopping .check-out {
@@ -729,6 +741,9 @@ body footer .svg-inline--fa:hover {
   }
   body main .gallery .photos {
     grid-template-columns: repeat(3, 1fr);
+  }
+  body main .shopping {
+    padding: 2rem 4rem;
   }
   body .footer {
     grid-template-columns: 10rem auto 1fr;
