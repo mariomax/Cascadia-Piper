@@ -674,19 +674,10 @@ body {
           grid-column-gap: 2rem;
           justify-content: center;
           figure {
-            align-self: end;
             img {
               padding-bottom: 1rem;
               max-width: 220px;
             }
-          }
-        }
-        .check-out {
-          display: flex;
-          justify-content: center;
-          // padding-top: 1rem;
-          img {
-            max-width: 200px;
           }
         }
       } // Contact
@@ -811,9 +802,19 @@ body {
         .photos {
           grid-template-columns: repeat(3, 1fr);
         }
-      } //Merch
+      } // Merch
       .shopping {
         padding: 2rem 4rem;
+        .shirts {
+          .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          form {
+            margin: 1rem auto 3rem;
+          }
+        }
       }
     } // Footer
     .footer {

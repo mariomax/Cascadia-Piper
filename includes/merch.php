@@ -73,7 +73,7 @@
 
         <section class="shirts">
           <!-- "Piper face shirt" -->
-          <div>
+          <div class="item">
             <figure>
               <img src="../images/shirt-back-1.png" alt="Cascadia Piper tee shirt">
               <figcaption>Bagpiping from the Northwest</figcaption>
@@ -102,7 +102,7 @@
           </div>
 
           <!-- "Text shirt" -->
-          <div>
+          <div class="item">
             <figure>
               <img src="../images/shirt-back-2.png" alt="Cascadia Piper tee shirt">
               <figcaption>Loud Pipes Save Lives</figcaption>
@@ -129,9 +129,9 @@
               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
           </div> 
-          
+
           <!-- "Bagpipe shape shirt" --> 
-          <div>
+          <div class="item">
             <figure>
               <img src="../images/shirt-back-3.png" alt="Cascadia Piper tee shirt">
               <figcaption>Bagpipe &amp; Tagline</figcaption>

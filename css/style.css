@@ -645,19 +645,9 @@ body footer .svg-inline--fa:hover {
     grid-column-gap: 2rem;
     justify-content: center;
   }
-  body main .shopping .shirts figure {
-    align-self: end;
-  }
   body main .shopping .shirts figure img {
     padding-bottom: 1rem;
     max-width: 220px;
-  }
-  body main .shopping .check-out {
-    display: flex;
-    justify-content: center;
-  }
-  body main .shopping .check-out img {
-    max-width: 200px;
   }
   body main .contact {
     display: grid;
@@ -764,6 +754,14 @@ body footer .svg-inline--fa:hover {
   }
   body main .shopping {
     padding: 2rem 4rem;
+  }
+  body main .shopping .shirts .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main .shopping .shirts form {
+    margin: 1rem auto 3rem;
   }
   body .footer {
     grid-template-columns: 10rem auto 1fr;
