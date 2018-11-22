@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700');
 body {
   font-size: 16px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   h1,
   h2,
@@ -319,6 +319,10 @@ body {
           img {
             margin-bottom: .5rem;
             max-width: 300px;
+          }
+          img.fig-logo,
+          figcaption.fig-logo {
+            display: none;
           }
         }
         form {
@@ -670,13 +674,16 @@ body {
           }
         }
         .shirts {
-          grid-template-columns: repeat(3, 1fr);
-          grid-column-gap: 2rem;
+          grid-template-columns: 0px repeat(3, 1fr);
+          // grid-column-gap: 2rem;
           justify-content: center;
+          .item {
+            padding: 0 1rem;
+          }
           figure {
             img {
               padding-bottom: 1rem;
-              max-width: 220px;
+              max-width: 250px;
             }
           }
         }
@@ -825,6 +832,36 @@ body {
 
 @media (min-width: 1200px) {
   body {
+    main {
+      padding: 3rem;
+      .shopping {
+        padding: 2rem 0;
+        h1 {
+          padding: 0 3rem 1rem;
+        }
+        .shop-open {
+          padding: 0 3rem;
+          max-width: 830px;
+          .fig-logo {
+            display: none;
+          }
+        }
+        .shirts {
+          grid-template-columns: auto repeat(3, 1fr);
+          figure {
+            img.fig-logo {
+            display: block;
+            max-width: 150px;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+            }
+            figcaption.fig-logo {
+              display: block;
+            }
+          }
+        }
+      }
+    }
     .footer {
       grid-template-columns: 20rem 1fr 1fr;
       grid-template-rows: auto auto;

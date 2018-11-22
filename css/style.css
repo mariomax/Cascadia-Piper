@@ -6,7 +6,7 @@ Programmer: Mario Lopriore
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:400,700');
 body {
   font-size: 16px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 body h1,
@@ -316,6 +316,10 @@ body main .shopping .shirts {
 body main .shopping .shirts figure img {
   margin-bottom: .5rem;
   max-width: 300px;
+}
+body main .shopping .shirts figure img.fig-logo,
+body main .shopping .shirts figure figcaption.fig-logo {
+  display: none;
 }
 body main .shopping .shirts form {
   font-family: 'Signika', sans-serif;
@@ -641,13 +645,15 @@ body footer .svg-inline--fa:hover {
     max-width: 150px;
   }
   body main .shopping .shirts {
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
+    grid-template-columns: 0px repeat(3, 1fr);
     justify-content: center;
+  }
+  body main .shopping .shirts .item {
+    padding: 0 1rem;
   }
   body main .shopping .shirts figure img {
     padding-bottom: 1rem;
-    max-width: 220px;
+    max-width: 250px;
   }
   body main .contact {
     display: grid;
@@ -768,6 +774,34 @@ body footer .svg-inline--fa:hover {
   }
 }
 @media (min-width: 1200px) {
+  body main {
+    padding: 3rem;
+  }
+  body main .shopping {
+    padding: 2rem 0;
+  }
+  body main .shopping h1 {
+    padding: 0 3rem 1rem;
+  }
+  body main .shopping .shop-open {
+    padding: 0 3rem;
+    max-width: 830px;
+  }
+  body main .shopping .shop-open .fig-logo {
+    display: none;
+  }
+  body main .shopping .shirts {
+    grid-template-columns: auto repeat(3, 1fr);
+  }
+  body main .shopping .shirts figure img.fig-logo {
+    display: block;
+    max-width: 150px;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+  body main .shopping .shirts figure figcaption.fig-logo {
+    display: block;
+  }
   body .footer {
     grid-template-columns: 20rem 1fr 1fr;
     grid-template-rows: auto auto;
